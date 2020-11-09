@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmPedido : Form
+    public partial class FrmRegistraProducto : Form
     {
-        public FrmPedido()
+        public FrmRegistraProducto()
         {
             InitializeComponent();
-        }
-
-        private void FrmPedido_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

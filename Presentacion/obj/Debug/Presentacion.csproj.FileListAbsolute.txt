@@ -12,3 +12,5 @@ C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentaci
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmCliente.resources
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmDomiciliario.resources
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmPedido.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmConsultarProducto.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistraProducto.resources

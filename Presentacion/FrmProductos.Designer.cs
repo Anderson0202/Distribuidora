@@ -28,48 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.TblListaProducto = new System.Windows.Forms.DataGridView();
             this.PnlMenuProducto = new System.Windows.Forms.Panel();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnConsultar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).BeginInit();
+            this.PnlFormulario = new System.Windows.Forms.Panel();
             this.PnlMenuProducto.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(411, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LISTA DE PRODUCTOS";
-            // 
-            // TblListaProducto
-            // 
-            this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblListaProducto.Location = new System.Drawing.Point(193, 81);
-            this.TblListaProducto.Name = "TblListaProducto";
-            this.TblListaProducto.Size = new System.Drawing.Size(571, 266);
-            this.TblListaProducto.TabIndex = 1;
-            // 
             // PnlMenuProducto
             // 
-            this.PnlMenuProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.PnlMenuProducto.BackColor = System.Drawing.Color.Gainsboro;
             this.PnlMenuProducto.Controls.Add(this.BtnEliminar);
             this.PnlMenuProducto.Controls.Add(this.BtnEditar);
             this.PnlMenuProducto.Controls.Add(this.BtnRegistrar);
             this.PnlMenuProducto.Controls.Add(this.BtnConsultar);
-            this.PnlMenuProducto.Location = new System.Drawing.Point(2, 0);
+            this.PnlMenuProducto.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlMenuProducto.Location = new System.Drawing.Point(0, 0);
             this.PnlMenuProducto.Name = "PnlMenuProducto";
-            this.PnlMenuProducto.Size = new System.Drawing.Size(152, 448);
+            this.PnlMenuProducto.Size = new System.Drawing.Size(152, 450);
             this.PnlMenuProducto.TabIndex = 2;
             // 
             // BtnEliminar
@@ -106,13 +84,14 @@
             this.BtnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRegistrar.Location = new System.Drawing.Point(3, 178);
+            this.BtnRegistrar.Location = new System.Drawing.Point(3, 122);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(146, 38);
             this.BtnRegistrar.TabIndex = 5;
             this.BtnRegistrar.TabStop = false;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = true;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // BtnConsultar
             // 
@@ -120,39 +99,43 @@
             this.BtnConsultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.BtnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnConsultar.Location = new System.Drawing.Point(3, 120);
+            this.BtnConsultar.Location = new System.Drawing.Point(3, 175);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Size = new System.Drawing.Size(146, 38);
             this.BtnConsultar.TabIndex = 4;
             this.BtnConsultar.TabStop = false;
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
+            // 
+            // PnlFormulario
+            // 
+            this.PnlFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlFormulario.Location = new System.Drawing.Point(152, 0);
+            this.PnlFormulario.Name = "PnlFormulario";
+            this.PnlFormulario.Size = new System.Drawing.Size(648, 450);
+            this.PnlFormulario.TabIndex = 3;
             // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PnlFormulario);
             this.Controls.Add(this.PnlMenuProducto);
-            this.Controls.Add(this.TblListaProducto);
-            this.Controls.Add(this.label1);
             this.Name = "FrmProductos";
             this.Text = "FrmProductos";
-            ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).EndInit();
             this.PnlMenuProducto.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView TblListaProducto;
         private System.Windows.Forms.Panel PnlMenuProducto;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnConsultar;
+        private System.Windows.Forms.Panel PnlFormulario;
     }
 }

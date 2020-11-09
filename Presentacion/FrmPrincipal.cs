@@ -17,7 +17,7 @@ namespace Presentacion
         {
             InitializeComponent();
             PnlMenu.Width = 0;
-            CmbOpcion.Visible = false;
+           
             
         }
 
@@ -114,13 +114,29 @@ namespace Presentacion
 
         private void BtnProductos_Click(object sender, EventArgs e)
         {
+            BtnProductos.BackColor = Color.FromArgb(139, 0, 0);
+            BtnProductos.ForeColor = Color.FromArgb(244,244,244);
             ReducirPanelMenu();
-            CmbOpcion.Visible = true;
-            CmbOpcion.Items.Add("Lista");
-            CmbOpcion.Items.Add("Registrar");
-            CmbOpcion.Items.Add("Editar");
-            CmbOpcion.Items.Add("Eliminar");
+            
             AbrirFormulario<FrmProductos>();
+
+        }
+
+        private void CloseForms(object sender, FormClosedEventArgs e)
+        {
+
+            if (Application.OpenForms["FrmProducto"]==null)
+                BtnProductos.BackColor = Color.FromArgb(224, 224, 224);
+
+            if (Application.OpenForms["FrmPedido"] == null)
+                BtnPedido.BackColor = Color.FromArgb(224, 224, 224);
+
+            if (Application.OpenForms["FrmCliente"] == null)
+                BtnCliente.BackColor = Color.FromArgb(224, 224, 224);
+
+            if (Application.OpenForms["FrmDomiciliario"] == null)
+                BtnDomiciliario.BackColor = Color.FromArgb(224, 224, 224);
+            
 
         }
 
@@ -156,18 +172,24 @@ namespace Presentacion
         {
             ReducirPanelMenu();
             AbrirFormulario<FrmCliente>();
+            BtnCliente.BackColor = Color.FromArgb(139, 0, 0);
+            BtnCliente.ForeColor = Color.FromArgb(244, 244, 244);
         }
 
         private void BtnPedido_Click(object sender, EventArgs e)
         {
             ReducirPanelMenu();
             AbrirFormulario<FrmPedido>();
+            BtnPedido.BackColor = Color.FromArgb(139, 0, 0);
+            BtnPedido.ForeColor = Color.FromArgb(244, 244, 244);
         }
 
         private void BtnDomiciliario_Click(object sender, EventArgs e)
         {
             ReducirPanelMenu();
             AbrirFormulario<FrmDomiciliario>();
+            BtnDomiciliario.BackColor = Color.FromArgb(139, 0, 0);
+            BtnDomiciliario.ForeColor = Color.FromArgb(244, 244, 244);
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -180,8 +202,7 @@ namespace Presentacion
         {
             Form formulario;
 
-            formulario = PnlFormularios.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
-                                                                                   //si el formulario/instancia no existe
+            formulario = PnlFormularios.Controls.OfType<MiForm>().FirstOrDefault();
             if (formulario == null)
             {
                 formulario = new MiForm();
@@ -192,10 +213,11 @@ namespace Presentacion
                 PnlFormularios.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
+                formulario.FormClosed += new FormClosedEventHandler(CloseForms);
             }
             else
             {
-                //si el formulario/instancia existe
+                
                 formulario.BringToFront();
             }
 

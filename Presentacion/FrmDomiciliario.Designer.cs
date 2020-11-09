@@ -33,21 +33,21 @@
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnConsultar = new System.Windows.Forms.Button();
+            this.PnlFormulario = new System.Windows.Forms.Panel();
             this.PnlMenuDomiciliario.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlMenuDomiciliario
             // 
-            this.PnlMenuDomiciliario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.PnlMenuDomiciliario.BackColor = System.Drawing.Color.LightGray;
             this.PnlMenuDomiciliario.Controls.Add(this.BtnEliminar);
             this.PnlMenuDomiciliario.Controls.Add(this.BtnEditar);
             this.PnlMenuDomiciliario.Controls.Add(this.BtnRegistrar);
             this.PnlMenuDomiciliario.Controls.Add(this.BtnConsultar);
-            this.PnlMenuDomiciliario.Location = new System.Drawing.Point(2, 1);
+            this.PnlMenuDomiciliario.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlMenuDomiciliario.Location = new System.Drawing.Point(0, 0);
             this.PnlMenuDomiciliario.Name = "PnlMenuDomiciliario";
-            this.PnlMenuDomiciliario.Size = new System.Drawing.Size(152, 448);
+            this.PnlMenuDomiciliario.Size = new System.Drawing.Size(152, 450);
             this.PnlMenuDomiciliario.TabIndex = 1;
             // 
             // BtnEliminar
@@ -90,11 +90,20 @@
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.UseVisualStyleBackColor = true;
             // 
+            // PnlFormulario
+            // 
+            this.PnlFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlFormulario.Location = new System.Drawing.Point(152, 0);
+            this.PnlFormulario.Name = "PnlFormulario";
+            this.PnlFormulario.Size = new System.Drawing.Size(648, 450);
+            this.PnlFormulario.TabIndex = 2;
+            // 
             // FrmDomiciliario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PnlFormulario);
             this.Controls.Add(this.PnlMenuDomiciliario);
             this.Name = "FrmDomiciliario";
             this.Text = "FrmDomiciliario";
@@ -111,5 +120,6 @@
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnConsultar;
+        private System.Windows.Forms.Panel PnlFormulario;
     }
 }

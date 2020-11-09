@@ -53,6 +53,7 @@ namespace Presentacion
             this.BtnRestaurar = new System.Windows.Forms.PictureBox();
             this.BtnMaximizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PnlContenedorPrincipal.SuspendLayout();
             this.PnlFormularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -88,6 +89,7 @@ namespace Presentacion
             // PnlFormularios
             // 
             this.PnlFormularios.BackColor = System.Drawing.SystemColors.Menu;
+            this.PnlFormularios.Controls.Add(this.label1);
             this.PnlFormularios.Controls.Add(this.pictureBox10);
             this.PnlFormularios.Controls.Add(this.pictureBox9);
             this.PnlFormularios.Controls.Add(this.pictureBox8);
@@ -98,9 +100,9 @@ namespace Presentacion
             this.PnlFormularios.Controls.Add(this.pictureBox3);
             this.PnlFormularios.Controls.Add(this.pictureBox2);
             this.PnlFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlFormularios.Location = new System.Drawing.Point(152, 40);
+            this.PnlFormularios.Location = new System.Drawing.Point(0, 40);
             this.PnlFormularios.Name = "PnlFormularios";
-            this.PnlFormularios.Size = new System.Drawing.Size(648, 610);
+            this.PnlFormularios.Size = new System.Drawing.Size(800, 610);
             this.PnlFormularios.TabIndex = 2;
             this.PnlFormularios.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormularios_Paint);
             this.PnlFormularios.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PnlFormularios_MouseMove);
@@ -109,7 +111,7 @@ namespace Presentacion
             // 
             this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(444, 6);
+            this.pictureBox10.Location = new System.Drawing.Point(596, 18);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(200, 188);
             this.pictureBox10.TabIndex = 8;
@@ -119,7 +121,7 @@ namespace Presentacion
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(397, 7);
+            this.pictureBox9.Location = new System.Drawing.Point(473, 7);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(116, 122);
             this.pictureBox9.TabIndex = 9;
@@ -129,7 +131,7 @@ namespace Presentacion
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(118, 284);
+            this.pictureBox8.Location = new System.Drawing.Point(194, 284);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(274, 216);
             this.pictureBox8.TabIndex = 6;
@@ -139,7 +141,7 @@ namespace Presentacion
             // 
             this.pictureBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(322, 377);
+            this.pictureBox7.Location = new System.Drawing.Point(474, 377);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(116, 123);
             this.pictureBox7.TabIndex = 5;
@@ -149,9 +151,9 @@ namespace Presentacion
             // 
             this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(322, 137);
+            this.pictureBox6.Location = new System.Drawing.Point(474, 135);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(116, 234);
+            this.pictureBox6.Size = new System.Drawing.Size(116, 236);
             this.pictureBox6.TabIndex = 4;
             this.pictureBox6.TabStop = false;
             // 
@@ -161,7 +163,7 @@ namespace Presentacion
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(2, 506);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(589, 91);
+            this.pictureBox5.Size = new System.Drawing.Size(589, 101);
             this.pictureBox5.TabIndex = 3;
             this.pictureBox5.TabStop = false;
             // 
@@ -179,9 +181,9 @@ namespace Presentacion
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(444, 202);
+            this.pictureBox3.Location = new System.Drawing.Point(596, 212);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(199, 396);
+            this.pictureBox3.Size = new System.Drawing.Size(199, 395);
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
@@ -189,7 +191,7 @@ namespace Presentacion
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(466, 272);
             this.pictureBox2.TabIndex = 0;
@@ -206,7 +208,7 @@ namespace Presentacion
             this.PnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlMenu.Location = new System.Drawing.Point(0, 40);
             this.PnlMenu.Name = "PnlMenu";
-            this.PnlMenu.Size = new System.Drawing.Size(152, 610);
+            this.PnlMenu.Size = new System.Drawing.Size(0, 610);
             this.PnlMenu.TabIndex = 1;
             // 
             // CmbOpcion
@@ -361,6 +363,15 @@ namespace Presentacion
             this.BtnCerrar.TabStop = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Administrador";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,6 +385,7 @@ namespace Presentacion
             this.Text = "Form1";
             this.PnlContenedorPrincipal.ResumeLayout(false);
             this.PnlFormularios.ResumeLayout(false);
+            this.PnlFormularios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -419,6 +431,7 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.ComboBox CmbOpcion;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -33,21 +33,21 @@
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnConsultar = new System.Windows.Forms.Button();
+            this.PnlFormulario = new System.Windows.Forms.Panel();
             this.PnlMenuPedido.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlMenuPedido
             // 
-            this.PnlMenuPedido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.PnlMenuPedido.BackColor = System.Drawing.Color.LightGray;
             this.PnlMenuPedido.Controls.Add(this.BtnEliminar);
             this.PnlMenuPedido.Controls.Add(this.BtnEditar);
             this.PnlMenuPedido.Controls.Add(this.BtnRegistrar);
             this.PnlMenuPedido.Controls.Add(this.BtnConsultar);
-            this.PnlMenuPedido.Location = new System.Drawing.Point(0, 1);
+            this.PnlMenuPedido.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnlMenuPedido.Location = new System.Drawing.Point(0, 0);
             this.PnlMenuPedido.Name = "PnlMenuPedido";
-            this.PnlMenuPedido.Size = new System.Drawing.Size(152, 448);
+            this.PnlMenuPedido.Size = new System.Drawing.Size(152, 450);
             this.PnlMenuPedido.TabIndex = 1;
             // 
             // BtnEliminar
@@ -90,14 +90,24 @@
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.UseVisualStyleBackColor = true;
             // 
+            // PnlFormulario
+            // 
+            this.PnlFormulario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlFormulario.Location = new System.Drawing.Point(152, 0);
+            this.PnlFormulario.Name = "PnlFormulario";
+            this.PnlFormulario.Size = new System.Drawing.Size(648, 450);
+            this.PnlFormulario.TabIndex = 2;
+            // 
             // FrmPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PnlFormulario);
             this.Controls.Add(this.PnlMenuPedido);
             this.Name = "FrmPedido";
             this.Text = "FrmPedido";
+            this.Load += new System.EventHandler(this.FrmPedido_Load);
             this.PnlMenuPedido.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -110,5 +120,6 @@
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnConsultar;
+        private System.Windows.Forms.Panel PnlFormulario;
     }
 }
