@@ -62,7 +62,7 @@
             // 
             this.PnlMenuProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.PnlMenuProducto.BackColor = System.Drawing.Color.LightGray;
+            this.PnlMenuProducto.BackColor = System.Drawing.Color.Gainsboro;
             this.PnlMenuProducto.Controls.Add(this.BtnEliminar);
             this.PnlMenuProducto.Controls.Add(this.BtnEditar);
             this.PnlMenuProducto.Controls.Add(this.BtnRegistrar);
@@ -74,6 +74,10 @@
             // 
             // BtnEliminar
             // 
+            this.BtnEliminar.FlatAppearance.BorderSize = 0;
+            this.BtnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.Location = new System.Drawing.Point(3, 290);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(146, 38);
@@ -84,6 +88,10 @@
             // 
             // BtnEditar
             // 
+            this.BtnEditar.FlatAppearance.BorderSize = 0;
+            this.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar.Location = new System.Drawing.Point(3, 231);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(146, 38);
@@ -94,6 +102,10 @@
             // 
             // BtnRegistrar
             // 
+            this.BtnRegistrar.FlatAppearance.BorderSize = 0;
+            this.BtnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Location = new System.Drawing.Point(3, 178);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(146, 38);
@@ -104,6 +116,10 @@
             // 
             // BtnConsultar
             // 
+            this.BtnConsultar.FlatAppearance.BorderSize = 0;
+            this.BtnConsultar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConsultar.Location = new System.Drawing.Point(3, 120);
             this.BtnConsultar.Name = "BtnConsultar";
             this.BtnConsultar.Size = new System.Drawing.Size(146, 38);

@@ -222,6 +222,12 @@ namespace Presentacion
             // 
             // BtnDomiciliario
             // 
+            this.BtnDomiciliario.FlatAppearance.BorderSize = 0;
+            this.BtnDomiciliario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnDomiciliario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnDomiciliario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDomiciliario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDomiciliario.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnDomiciliario.Location = new System.Drawing.Point(3, 299);
             this.BtnDomiciliario.Name = "BtnDomiciliario";
             this.BtnDomiciliario.Size = new System.Drawing.Size(146, 38);
@@ -233,6 +239,12 @@ namespace Presentacion
             // 
             // BtnPedido
             // 
+            this.BtnPedido.FlatAppearance.BorderSize = 0;
+            this.BtnPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPedido.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnPedido.Location = new System.Drawing.Point(3, 240);
             this.BtnPedido.Name = "BtnPedido";
             this.BtnPedido.Size = new System.Drawing.Size(146, 38);
@@ -244,6 +256,12 @@ namespace Presentacion
             // 
             // BtnCliente
             // 
+            this.BtnCliente.FlatAppearance.BorderSize = 0;
+            this.BtnCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCliente.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnCliente.Location = new System.Drawing.Point(3, 187);
             this.BtnCliente.Name = "BtnCliente";
             this.BtnCliente.Size = new System.Drawing.Size(146, 38);
@@ -255,6 +273,12 @@ namespace Presentacion
             // 
             // BtnProductos
             // 
+            this.BtnProductos.FlatAppearance.BorderSize = 0;
+            this.BtnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProductos.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnProductos.Location = new System.Drawing.Point(3, 129);
             this.BtnProductos.Name = "BtnProductos";
             this.BtnProductos.Size = new System.Drawing.Size(146, 38);

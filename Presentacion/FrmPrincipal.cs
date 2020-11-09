@@ -151,6 +151,7 @@ namespace Presentacion
             }
         }
 
+
         private void BtnCliente_Click(object sender, EventArgs e)
         {
             ReducirPanelMenu();
