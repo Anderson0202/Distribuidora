@@ -150,7 +150,7 @@ namespace Presentacion
                 PnlMenu.Width = 0;
             }
         }
-         
+          
 
         private void BtnCliente_Click(object sender, EventArgs e)
         {
