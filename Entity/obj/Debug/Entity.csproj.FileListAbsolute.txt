@@ -1,0 +1,6 @@
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Entity\obj\Debug\Entity.csprojAssemblyReference.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Entity\bin\Debug\Entity.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Entity\bin\Debug\Entity.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Entity\obj\Debug\Entity.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Entity\obj\Debug\Entity.pdb

@@ -136,7 +136,6 @@ namespace Presentacion
 
             if (Application.OpenForms["FrmDomiciliario"] == null)
                 BtnDomiciliario.BackColor = Color.FromArgb(224, 224, 224);
-            
 
         }
 
@@ -190,6 +189,20 @@ namespace Presentacion
             AbrirFormulario<FrmDomiciliario>();
             BtnDomiciliario.BackColor = Color.FromArgb(139, 0, 0);
             BtnDomiciliario.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSecretario_Click(object sender, EventArgs e)
+        {
+            ReducirPanelMenu();
+            AbrirFormulario<FrmSecretario>();
+            BtnSecretario.BackColor = Color.FromArgb(139, 0, 0);
+            BtnSecretario.ForeColor = Color.FromArgb(244, 244, 244);
+
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)

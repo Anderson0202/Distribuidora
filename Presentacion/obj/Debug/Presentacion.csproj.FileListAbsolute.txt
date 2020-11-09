@@ -12,5 +12,12 @@ C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentaci
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmCliente.resources
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmDomiciliario.resources
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmPedido.resources
-C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmConsultarProducto.resources
-C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistraProducto.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarCliente.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Entity.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Entity.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarDomiciliario.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarPedido.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarSecretario.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmSecretario.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarProducto.resources

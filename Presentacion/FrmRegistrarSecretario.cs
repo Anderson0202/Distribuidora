@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmConsultarCliente : Form
+    public partial class FrmRegistrarSecretario : Form
     {
-        public FrmConsultarCliente()
+        public FrmRegistrarSecretario()
         {
             InitializeComponent();
+        }
+
+        private void PbxCerrarRegistro_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

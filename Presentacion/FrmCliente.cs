@@ -22,12 +22,7 @@ namespace Presentacion
 
         }
 
-        private void BtnConsultar_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<FrmConsultarCliente>();
-            BtnConsultar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnConsultar.ForeColor = Color.FromArgb(244, 244, 244);
-        }
+        
 
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
@@ -57,18 +52,8 @@ namespace Presentacion
         private void CloseForms(object sender, FormClosedEventArgs e)
         {
 
-            if (Application.OpenForms["FrmRegistrarProducto"] == null)
+            if (Application.OpenForms["FrmRegistrarCliente"] == null)
                 BtnRegistrar.BackColor = Color.FromArgb(224, 224, 224);
-
-            if (Application.OpenForms["FrmConsultarProducto"] == null)
-                BtnConsultar.BackColor = Color.FromArgb(224, 224, 224);
-
-            if (Application.OpenForms["FrmCliente"] == null)
-                BtnEditar.BackColor = Color.FromArgb(224, 224, 224);
-
-            if (Application.OpenForms["FrmDomiciliario"] == null)
-                BtnEliminar.BackColor = Color.FromArgb(224, 224, 224);
-
 
         }
 
@@ -79,6 +64,35 @@ private void BtnRegistrar_Click(object sender, EventArgs e)
             AbrirFormulario<FrmRegistrarCliente>();
             BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
             BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRegistrar_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarCliente>();
+            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
+            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarCliente>();
+            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
+            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void PbxCerrarFormulario_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

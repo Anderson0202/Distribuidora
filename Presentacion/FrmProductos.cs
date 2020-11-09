@@ -19,7 +19,7 @@ namespace Presentacion
 
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmRegistraProducto>();
+            AbrirFormulario<FrmRegistrarProducto>();
             BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
             BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
         }
@@ -55,23 +55,37 @@ namespace Presentacion
             if (Application.OpenForms["FrmRegistrarProducto"] == null)
                 BtnRegistrar.BackColor = Color.FromArgb(224, 224, 224);
 
-            if (Application.OpenForms["FrmConsultarProducto"] == null)
-                BtnConsultar.BackColor = Color.FromArgb(224, 224, 224);
+        }
 
-            if (Application.OpenForms["FrmCliente"] == null)
-                BtnEditar.BackColor = Color.FromArgb(224, 224, 224);
+     
 
-            if (Application.OpenForms["FrmDomiciliario"] == null)
-                BtnEliminar.BackColor = Color.FromArgb(224, 224, 224);
-
+        private void FrmProductos_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void BtnConsultar_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmConsultarProducto>();
-            BtnConsultar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnConsultar.ForeColor = Color.FromArgb(244, 244, 244);
+
+        }
+
+        private void BtnProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarProducto>();
+            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
+            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarProducto>();
+            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
+            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void PbxCerrarFormulario_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

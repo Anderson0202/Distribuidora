@@ -9,20 +9,25 @@ namespace Entity
     class Producto
     {
 
-        public double Precio { get; set; }
-        public Descuento Descuento { get; set; }
         public string Codigo { get; set; }
+
+        public double Peso { get; set; }
+
+        public double Precio { get; set; }
+
+        public Descuento Descuento { get; set; }
 
         public Producto()
         {
 
         }
 
-        public Producto(double precio, Descuento descuento, string codigo)
+        public Producto(string codigo, double peso, double precio, Descuento descuento)
         {
+            Codigo = codigo;
+            Peso = peso;
             Precio = precio;
             Descuento = descuento;
-            Codigo = codigo;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Entity
         public int IdDetallePedido { get; set; }
         public double TotalNeto { get; set; }
         public double TotalDescuento { get; set; }
-        public double TotalPagar { get(TotalNeto* TotalDescuento) set; }
+        public double TotalPagar { get; set; }
 
     }
 }

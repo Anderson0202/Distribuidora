@@ -52,18 +52,6 @@
     <Compile Include="FrmCliente.Designer.cs">
       <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConsultarCliente.Designer.cs">
-      <DependentUpon>FrmConsultarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmConsultarProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConsultarProducto.Designer.cs">
-      <DependentUpon>FrmConsultarProducto.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmDomiciliario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +76,11 @@
     <Compile Include="FrmProductos.Designer.cs">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistraProducto.cs">
+    <Compile Include="FrmRegistrarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistraProducto.Designer.cs">
-      <DependentUpon>FrmRegistraProducto.cs</DependentUpon>
+    <Compile Include="FrmRegistrarProducto.Designer.cs">
+      <DependentUpon>FrmRegistrarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarCliente.cs">
       <SubType>Form</SubType>
@@ -100,13 +88,34 @@
     <Compile Include="FrmRegistrarCliente.Designer.cs">
       <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistrarDomiciliario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarDomiciliario.Designer.cs">
+      <DependentUpon>FrmRegistrarDomiciliario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarPedido.Designer.cs">
+      <DependentUpon>FrmRegistrarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrarSecretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarSecretario.Designer.cs">
+      <DependentUpon>FrmRegistrarSecretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretario.Designer.cs">
+      <DependentUpon>FrmSecretario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCliente.resx">
       <DependentUpon>FrmCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultarProducto.resx">
-      <DependentUpon>FrmConsultarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDomiciliario.resx">
       <DependentUpon>FrmDomiciliario.cs</DependentUpon>
@@ -120,8 +129,23 @@
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistraProducto.resx">
-      <DependentUpon>FrmRegistraProducto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRegistrarProducto.resx">
+      <DependentUpon>FrmRegistrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarCliente.resx">
+      <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarDomiciliario.resx">
+      <DependentUpon>FrmRegistrarDomiciliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarPedido.resx">
+      <DependentUpon>FrmRegistrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarSecretario.resx">
+      <DependentUpon>FrmRegistrarSecretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretario.resx">
+      <DependentUpon>FrmSecretario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

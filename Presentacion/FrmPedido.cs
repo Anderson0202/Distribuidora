@@ -15,6 +15,32 @@ namespace Presentacion
         public FrmPedido()
         {
             InitializeComponent();
+            PnlBuscarUnPedido.Visible = false;
+        }
+
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+
+            formulario = PnlFormulario.Controls.OfType<MiForm>().FirstOrDefault();
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                PnlFormulario.Controls.Add(formulario);
+                PnlFormulario.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+                formulario.FormClosed += new FormClosedEventHandler(CloseForms);
+            }
+            else
+            {
+
+                formulario.BringToFront();
+            }
+
         }
 
         private void FrmPedido_Load(object sender, EventArgs e)
@@ -25,6 +51,48 @@ namespace Presentacion
         private void BtnConsultar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CloseForms(object sender, FormClosedEventArgs e)
+        {
+
+            if (Application.OpenForms["FrmRegistrarPedido"] == null)
+                BtnRegistrar.BackColor = Color.FromArgb(224, 224, 224);
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarPedido>();
+            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
+            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void BtnBuscarPedido_Click(object sender, EventArgs e)
+        {
+            PnlBuscarUnPedido.Visible = true;
+        }
+
+        private void BtnVerDetallePedido_Click(object sender, EventArgs e)
+        {
+            PnlBuscarUnPedido.Visible = true;
+        }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarPedido>();
+            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
+            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+        }
+
+        private void PbxCerrarFormulario_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
