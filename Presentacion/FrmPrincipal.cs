@@ -142,7 +142,7 @@ namespace Presentacion
                 PnlMenu.Width = 0;
             }
         }
-         
+          
         private void ReducirPanelMenu()
         {
             if (PnlMenu.Width != 0)

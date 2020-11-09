@@ -1,0 +1,14 @@
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmPrincipal.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmProductos.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmCliente.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmDomiciliario.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmPedido.resources

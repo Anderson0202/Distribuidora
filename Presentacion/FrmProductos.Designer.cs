@@ -53,7 +53,7 @@
             // TblListaProducto
             // 
             this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblListaProducto.Location = new System.Drawing.Point(189, 96);
+            this.TblListaProducto.Location = new System.Drawing.Point(193, 81);
             this.TblListaProducto.Name = "TblListaProducto";
             this.TblListaProducto.Size = new System.Drawing.Size(571, 266);
             this.TblListaProducto.TabIndex = 1;
