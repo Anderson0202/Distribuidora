@@ -89,6 +89,7 @@
             this.BtnConsultar.TabStop = false;
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.UseVisualStyleBackColor = true;
+            this.BtnConsultar.Click += new System.EventHandler(this.BtnConsultar_Click);
             // 
             // PnlFormulario
             // 

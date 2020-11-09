@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Secretario
+    class Secretario : Persona
     {
+
+        public DateTime FechaContrato { get; set; }
+
+        public Secretario()
+        {
+
+        }
+
+        public Secretario(DateTime fechaContrato)
+        {
+            FechaContrato = fechaContrato;
+        }
     }
 }

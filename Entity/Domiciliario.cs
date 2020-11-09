@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Domiciliario
+    class Domiciliario : Persona
     {
+
+        public DateTime FechaVencimientoPermisoConduccion { get; set; }
+        public Vehiculo Moto { get; set; }
+
+        public Domiciliario()
+        {
+
+        }
+
+        public Domiciliario(DateTime fechaVencimientoPermisoConduccion, Vehiculo moto)
+        {
+            FechaVencimientoPermisoConduccion = fechaVencimientoPermisoConduccion;
+            Moto = moto;
+        }
     }
 }

@@ -8,5 +8,12 @@ namespace Entity
 {
     class Pedido
     {
+
+        public int IdPedido { get; set; }
+        public DateTime FechaPedido { get; set; }
+        public double ValorTotal { get; set; }
+
+        public int MyProperty { get; set; }
+
     }
 }
