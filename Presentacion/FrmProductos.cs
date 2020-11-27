@@ -19,9 +19,7 @@ namespace Presentacion
 
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<FrmRegistrarProducto>();
-            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+
         }
 
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
@@ -52,8 +50,7 @@ namespace Presentacion
         private void CloseForms(object sender, FormClosedEventArgs e)
         {
 
-            if (Application.OpenForms["FrmRegistrarProducto"] == null)
-                BtnRegistrar.BackColor = Color.FromArgb(224, 224, 224);
+            
 
         }
 
@@ -72,20 +69,44 @@ namespace Presentacion
         private void BtnProductos_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegistrarProducto>();
-            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+            
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegistrarProducto>();
-            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+            
         }
 
         private void PbxCerrarFormulario_Click(object sender, EventArgs e)
         {
             this.Close();
+            
+        }
+
+        private void PnlFormulario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVerDetalle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

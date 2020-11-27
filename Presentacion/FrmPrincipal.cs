@@ -17,8 +17,17 @@ namespace Presentacion
         {
             InitializeComponent();
             PnlMenu.Width = 0;
-           
-            
+            BtnRestaurar.Visible = false;
+            EsconderSubMenus(); 
+        }
+
+        private void EsconderSubMenus() 
+        {
+            PnlBotonGestionCliente.Visible = false;
+            PnlBotonesGestionDomiciliario.Visible = false;
+            PnlBotonesGestionPedidos.Visible = false;
+            PnlBotonGestionProducto.Visible = false;
+            PnlBotonesGestionSecretario.Visible = false;
         }
 
         #region funcionalidad de formulario
@@ -119,7 +128,7 @@ namespace Presentacion
             ReducirPanelMenu();
             
             AbrirFormulario<FrmProductos>();
-
+            PnlBotonGestionProducto.Visible = true;
         }
 
         private void CloseForms(object sender, FormClosedEventArgs e)
@@ -173,6 +182,8 @@ namespace Presentacion
             AbrirFormulario<FrmCliente>();
             BtnCliente.BackColor = Color.FromArgb(139, 0, 0);
             BtnCliente.ForeColor = Color.FromArgb(244, 244, 244);
+            PnlBotonGestionCliente.Visible = true;
+            
         }
 
         private void BtnPedido_Click(object sender, EventArgs e)
@@ -181,6 +192,8 @@ namespace Presentacion
             AbrirFormulario<FrmPedido>();
             BtnPedido.BackColor = Color.FromArgb(139, 0, 0);
             BtnPedido.ForeColor = Color.FromArgb(244, 244, 244);
+            PnlBotonesGestionPedidos.Visible = true;
+           
         }
 
         private void BtnDomiciliario_Click(object sender, EventArgs e)
@@ -189,6 +202,7 @@ namespace Presentacion
             AbrirFormulario<FrmDomiciliario>();
             BtnDomiciliario.BackColor = Color.FromArgb(139, 0, 0);
             BtnDomiciliario.ForeColor = Color.FromArgb(244, 244, 244);
+            PnlBotonesGestionDomiciliario.Visible = true;
         }
 
         private void pictureBox14_Click(object sender, EventArgs e)
@@ -198,11 +212,12 @@ namespace Presentacion
 
         private void BtnSecretario_Click(object sender, EventArgs e)
         {
+            
             ReducirPanelMenu();
             AbrirFormulario<FrmSecretario>();
             BtnSecretario.BackColor = Color.FromArgb(139, 0, 0);
             BtnSecretario.ForeColor = Color.FromArgb(244, 244, 244);
-
+            
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)

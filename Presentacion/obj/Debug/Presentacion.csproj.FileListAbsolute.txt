@@ -21,3 +21,5 @@ C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentaci
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarSecretario.resources
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmSecretario.resources
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\obj\Debug\Presentacion.FrmRegistrarProducto.resources
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\BLL.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\BLL.pdb

@@ -10,22 +10,22 @@ namespace Entity
     class Descuento
     {
 
-        public decimal PorcentajeDescuento { get; set; }
+        public double PorcentajeDescuento { get; set; }
+        public string CodigoDescuento { get; set; }
         public string CodigoProducto { get; set; }
         public string identificacionPersona { get; set; }
-        public string CodigoDescuento { get; set; }
 
         public Descuento()
         {
 
         }
 
-        public Descuento(decimal porcentajeDescuento, string codigoProducto, string identificacionPersona, string codigoDescuento)
+        public Descuento(double porcentajeDescuento, string codigoProducto, string identificacionPersona, string codigoDescuento)
         {
             PorcentajeDescuento = porcentajeDescuento;
+            CodigoDescuento = codigoDescuento;
             CodigoProducto = codigoProducto;
             this.identificacionPersona = identificacionPersona;
-            CodigoDescuento = codigoDescuento;
         }
 
     }

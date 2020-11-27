@@ -52,20 +52,18 @@ namespace Presentacion
         private void CloseForms(object sender, FormClosedEventArgs e)
         {
 
-            if (Application.OpenForms["FrmRegistrarCliente"] == null)
-                BtnRegistrar.BackColor = Color.FromArgb(224, 224, 224);
+           
+                
 
         }
 
-        
-            
-private void BtnRegistrar_Click(object sender, EventArgs e)
+
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegistrarCliente>();
-            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
-        }
 
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -79,20 +77,58 @@ private void BtnRegistrar_Click(object sender, EventArgs e)
         private void BtnRegistrar_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegistrarCliente>();
-            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+            
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegistrarCliente>();
-            BtnRegistrar.BackColor = Color.FromArgb(139, 0, 0);
-            BtnRegistrar.ForeColor = Color.FromArgb(244, 244, 244);
+           
         }
 
         private void PbxCerrarFormulario_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void TblListaProducto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void PnlFormulario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnVerDetalle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

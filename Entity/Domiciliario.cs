@@ -22,5 +22,6 @@ namespace Entity
             FechaVencimientoPermisoConduccion = fechaVencimientoPermisoConduccion;
             Moto = moto;
         }
+
     }
 }

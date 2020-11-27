@@ -12,7 +12,7 @@ namespace Entity
         public string Direccion { get; set; }
         public string  TipoCliente { get; set; }
         public string Email { get; set; }
-
+        public List<Descuento> Descuentos{ get; set; }
         public Cliente()
         {
 

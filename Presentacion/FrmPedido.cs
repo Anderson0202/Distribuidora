@@ -94,5 +94,40 @@ namespace Presentacion
         {
             this.Close();
         }
+
+        private void PnlFormulario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PnlBuscarUnPedido_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVerDetalle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEditar_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
