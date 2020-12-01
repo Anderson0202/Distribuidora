@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,14 @@ namespace Presentacion
 {
     public partial class FrmRegistrarDomiciliario : Form
     {
+        private string ConnectionString;
+        private VehiculoService vehiculoService;
         public FrmRegistrarDomiciliario()
         {
             InitializeComponent();
+            ConnectionString = ConfigConnection.connectionString;
+            vehiculoService = new VehiculoService(ConnectionString);
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -45,6 +52,17 @@ namespace Presentacion
         private void PbxCerrarRegistro_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            Vehiculo vehiculo = new Vehiculo();
+            vehiculo.Placa = TxtPlaca.Text;
+            vehiculo.FechaVencimientoSoat = Convert.ToDateTime(TxtSoat.Text);
+            vehiculo.FechaVenciciemtoTecnoMecanica = Convert.ToDateTime(TxtTecnoMecanica.Text);
+            String mensaje = vehiculoService.Guardar(vehiculo);
+            MessageBox.Show(mensaje);
         }
     }
 }

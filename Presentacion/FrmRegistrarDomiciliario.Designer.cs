@@ -30,16 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarDomiciliario));
             this.PnlFormularioRegistrarDomicliario = new System.Windows.Forms.Panel();
+            this.PbxCerrarRegistro = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TxtTecnoMecanica = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.TxtSoat = new System.Windows.Forms.TextBox();
+            this.TxtPlaca = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,12 +54,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.PbxCerrarRegistro = new System.Windows.Forms.PictureBox();
             this.PnlFormularioRegistrarDomicliario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarRegistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarRegistro)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlFormularioRegistrarDomicliario
@@ -69,11 +69,11 @@
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.comboBox1);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label5);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label6);
-            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.textBox7);
+            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.TxtTecnoMecanica);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label10);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label11);
-            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.textBox9);
-            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.textBox10);
+            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.TxtSoat);
+            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.TxtPlaca);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label12);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.pictureBox2);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label7);
@@ -92,6 +92,28 @@
             this.PnlFormularioRegistrarDomicliario.Size = new System.Drawing.Size(800, 450);
             this.PnlFormularioRegistrarDomicliario.TabIndex = 0;
             // 
+            // PbxCerrarRegistro
+            // 
+            this.PbxCerrarRegistro.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarRegistro.Image")));
+            this.PbxCerrarRegistro.Location = new System.Drawing.Point(102, 12);
+            this.PbxCerrarRegistro.Name = "PbxCerrarRegistro";
+            this.PbxCerrarRegistro.Size = new System.Drawing.Size(37, 32);
+            this.PbxCerrarRegistro.TabIndex = 115;
+            this.PbxCerrarRegistro.TabStop = false;
+            this.PbxCerrarRegistro.Click += new System.EventHandler(this.PbxCerrarRegistro_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.DarkRed;
+            this.label8.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(586, 62);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(156, 24);
+            this.label8.TabIndex = 114;
+            this.label8.Text = "MOTOCICLETA";
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -104,6 +126,7 @@
             this.button2.TabIndex = 113;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label9
             // 
@@ -149,12 +172,12 @@
             this.label6.TabIndex = 109;
             this.label6.Text = "Tecnomecanica";
             // 
-            // textBox7
+            // TxtTecnoMecanica
             // 
-            this.textBox7.Location = new System.Drawing.Point(553, 254);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(202, 20);
-            this.textBox7.TabIndex = 108;
+            this.TxtTecnoMecanica.Location = new System.Drawing.Point(553, 254);
+            this.TxtTecnoMecanica.Name = "TxtTecnoMecanica";
+            this.TxtTecnoMecanica.Size = new System.Drawing.Size(202, 20);
+            this.TxtTecnoMecanica.TabIndex = 108;
             // 
             // label10
             // 
@@ -180,19 +203,19 @@
             this.label11.TabIndex = 106;
             this.label11.Text = "Placa";
             // 
-            // textBox9
+            // TxtSoat
             // 
-            this.textBox9.Location = new System.Drawing.Point(553, 204);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(202, 20);
-            this.textBox9.TabIndex = 105;
+            this.TxtSoat.Location = new System.Drawing.Point(553, 204);
+            this.TxtSoat.Name = "TxtSoat";
+            this.TxtSoat.Size = new System.Drawing.Size(202, 20);
+            this.TxtSoat.TabIndex = 105;
             // 
-            // textBox10
+            // TxtPlaca
             // 
-            this.textBox10.Location = new System.Drawing.Point(553, 129);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(202, 20);
-            this.textBox10.TabIndex = 104;
+            this.TxtPlaca.Location = new System.Drawing.Point(553, 129);
+            this.TxtPlaca.Name = "TxtPlaca";
+            this.TxtPlaca.Size = new System.Drawing.Size(202, 20);
+            this.TxtPlaca.TabIndex = 104;
             // 
             // label12
             // 
@@ -313,28 +336,6 @@
             this.pictureBox1.TabIndex = 101;
             this.pictureBox1.TabStop = false;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DarkRed;
-            this.label8.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(586, 62);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(156, 24);
-            this.label8.TabIndex = 114;
-            this.label8.Text = "MOTOCICLETA";
-            // 
-            // PbxCerrarRegistro
-            // 
-            this.PbxCerrarRegistro.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarRegistro.Image")));
-            this.PbxCerrarRegistro.Location = new System.Drawing.Point(102, 12);
-            this.PbxCerrarRegistro.Name = "PbxCerrarRegistro";
-            this.PbxCerrarRegistro.Size = new System.Drawing.Size(37, 32);
-            this.PbxCerrarRegistro.TabIndex = 115;
-            this.PbxCerrarRegistro.TabStop = false;
-            this.PbxCerrarRegistro.Click += new System.EventHandler(this.PbxCerrarRegistro_Click);
-            // 
             // FrmRegistrarDomiciliario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,9 +346,9 @@
             this.Text = "FrmRegistrarDomiciliario";
             this.PnlFormularioRegistrarDomicliario.ResumeLayout(false);
             this.PnlFormularioRegistrarDomicliario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarRegistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarRegistro)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -361,11 +362,11 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TxtTecnoMecanica;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox TxtSoat;
+        private System.Windows.Forms.TextBox TxtPlaca;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;

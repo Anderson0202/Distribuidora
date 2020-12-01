@@ -18,16 +18,51 @@ namespace Presentacion
             InitializeComponent();
             PnlMenu.Width = 0;
             BtnRestaurar.Visible = false;
-            EsconderSubMenus(); 
+            EsconderSubMenu(); 
         }
 
-        private void EsconderSubMenus() 
+        private void EsconderSubMenu() 
         {
-            PnlBotonGestionCliente.Visible = false;
-            PnlBotonesGestionDomiciliario.Visible = false;
-            PnlBotonesGestionPedidos.Visible = false;
             PnlBotonGestionProducto.Visible = false;
+            PnlBotonGestionCliente.Visible = false;
+            PnlBotonesGestionPedidos.Visible = false;
+            PnlBotonesGestionDomiciliario.Visible = false;
             PnlBotonesGestionSecretario.Visible = false;
+        }
+
+        private void EsconderSubMenuClick()
+        {
+            if (PnlBotonGestionProducto.Visible == true)
+            {
+                PnlBotonGestionProducto.Visible = false;
+            }
+            if (PnlBotonGestionCliente.Visible == true)
+            {
+                PnlBotonGestionCliente.Visible = false;
+            }
+            if (PnlBotonesGestionPedidos.Visible == true)
+            {
+                PnlBotonesGestionPedidos.Visible = false;
+            }
+            if (PnlBotonesGestionDomiciliario.Visible == true)
+            {
+                PnlBotonesGestionDomiciliario.Visible = false;
+            }
+            if (PnlBotonesGestionSecretario.Visible == true)
+            {
+                PnlBotonesGestionSecretario.Visible = false;
+            }
+        }
+
+        private void MostrarSubMenu(Panel subMenu)
+        {
+
+            if (subMenu.Visible == false)
+            {
+                EsconderSubMenuClick();
+
+            }
+
         }
 
         #region funcionalidad de formulario

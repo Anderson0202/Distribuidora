@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Vehiculo
+    public class Vehiculo
     {
 
         public string Placa { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Producto
+    public class Producto
     {
 
         public string Codigo { get; set; }
@@ -14,20 +14,25 @@ namespace Entity
         public double Peso { get; set; }
 
         public double Precio { get; set; }
-
-        public Descuento Descuento { get; set; }
+        public string Categoria { get; set; }
+        public string Nombre { get; set; }
+        public double PesoMinimo { get; set; }
+        public string Descripcion { get; set; }
 
         public Producto()
         {
 
         }
 
-        public Producto(string codigo, double peso, double precio, Descuento descuento)
+        public Producto(string codigo, double peso, double precio, string categoria, string nombre, double pesoMinimo, string descripcion)
         {
             Codigo = codigo;
             Peso = peso;
             Precio = precio;
-            Descuento = descuento;
+            Categoria = categoria;
+            Nombre = nombre;
+            PesoMinimo = pesoMinimo;
+            Descripcion = descripcion;
         }
     }
 }

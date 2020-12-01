@@ -31,25 +31,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDomiciliario));
             this.PnlFormularios = new System.Windows.Forms.Panel();
+            this.BtnRegistrar = new System.Windows.Forms.Button();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
             this.TblListaProducto = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PbxCerrarFormulario = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.PnlBuscarUnCliente = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnVerDetalle = new System.Windows.Forms.Button();
-            this.BtnRegistrar = new System.Windows.Forms.Button();
-            this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.PbxCerrarFormulario = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PnlFormularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.PnlBuscarUnCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlFormularios
@@ -72,6 +72,58 @@
             this.PnlFormularios.Size = new System.Drawing.Size(825, 482);
             this.PnlFormularios.TabIndex = 2;
             // 
+            // BtnRegistrar
+            // 
+            this.BtnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnRegistrar.FlatAppearance.BorderSize = 0;
+            this.BtnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnRegistrar.Location = new System.Drawing.Point(25, 134);
+            this.BtnRegistrar.Name = "BtnRegistrar";
+            this.BtnRegistrar.Size = new System.Drawing.Size(96, 37);
+            this.BtnRegistrar.TabIndex = 117;
+            this.BtnRegistrar.TabStop = false;
+            this.BtnRegistrar.Text = "Registrar";
+            this.BtnRegistrar.UseVisualStyleBackColor = true;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click_1);
+            // 
+            // BtnEditar
+            // 
+            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnEditar.FlatAppearance.BorderSize = 0;
+            this.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEditar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnEditar.Location = new System.Drawing.Point(25, 195);
+            this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.Size = new System.Drawing.Size(96, 36);
+            this.BtnEditar.TabIndex = 118;
+            this.BtnEditar.TabStop = false;
+            this.BtnEditar.Text = "Editar";
+            this.BtnEditar.UseVisualStyleBackColor = true;
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnEliminar.FlatAppearance.BorderSize = 0;
+            this.BtnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnEliminar.Location = new System.Drawing.Point(25, 256);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(96, 38);
+            this.BtnEliminar.TabIndex = 119;
+            this.BtnEliminar.TabStop = false;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            // 
             // TblListaProducto
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -84,41 +136,6 @@
             this.TblListaProducto.Size = new System.Drawing.Size(638, 266);
             this.TblListaProducto.TabIndex = 20;
             this.TblListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TblListaProducto_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(344, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 29);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "LISTA DE DOMICILIARIOS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // PbxCerrarFormulario
-            // 
-            this.PbxCerrarFormulario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PbxCerrarFormulario.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarFormulario.Image")));
-            this.PbxCerrarFormulario.Location = new System.Drawing.Point(25, 425);
-            this.PbxCerrarFormulario.Name = "PbxCerrarFormulario";
-            this.PbxCerrarFormulario.Size = new System.Drawing.Size(33, 31);
-            this.PbxCerrarFormulario.TabIndex = 106;
-            this.PbxCerrarFormulario.TabStop = false;
-            this.PbxCerrarFormulario.Click += new System.EventHandler(this.PbxCerrarFormulario_Click);
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(305, 28);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(33, 38);
-            this.pictureBox16.TabIndex = 16;
-            this.pictureBox16.TabStop = false;
             // 
             // PnlBuscarUnCliente
             // 
@@ -193,56 +210,40 @@
             this.BtnVerDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnVerDetalle.UseVisualStyleBackColor = false;
             // 
-            // BtnRegistrar
+            // pictureBox16
             // 
-            this.BtnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnRegistrar.FlatAppearance.BorderSize = 0;
-            this.BtnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRegistrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistrar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnRegistrar.Location = new System.Drawing.Point(25, 134);
-            this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(96, 37);
-            this.BtnRegistrar.TabIndex = 117;
-            this.BtnRegistrar.TabStop = false;
-            this.BtnRegistrar.Text = "Registrar";
-            this.BtnRegistrar.UseVisualStyleBackColor = true;
+            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(305, 28);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(33, 38);
+            this.pictureBox16.TabIndex = 16;
+            this.pictureBox16.TabStop = false;
             // 
-            // BtnEditar
+            // PbxCerrarFormulario
             // 
-            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnEditar.FlatAppearance.BorderSize = 0;
-            this.BtnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BtnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnEditar.Location = new System.Drawing.Point(25, 195);
-            this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.Size = new System.Drawing.Size(96, 36);
-            this.BtnEditar.TabIndex = 118;
-            this.BtnEditar.TabStop = false;
-            this.BtnEditar.Text = "Editar";
-            this.BtnEditar.UseVisualStyleBackColor = true;
+            this.PbxCerrarFormulario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PbxCerrarFormulario.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarFormulario.Image")));
+            this.PbxCerrarFormulario.Location = new System.Drawing.Point(25, 425);
+            this.PbxCerrarFormulario.Name = "PbxCerrarFormulario";
+            this.PbxCerrarFormulario.Size = new System.Drawing.Size(33, 31);
+            this.PbxCerrarFormulario.TabIndex = 106;
+            this.PbxCerrarFormulario.TabStop = false;
+            this.PbxCerrarFormulario.Click += new System.EventHandler(this.PbxCerrarFormulario_Click);
             // 
-            // BtnEliminar
+            // label1
             // 
-            this.BtnEliminar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnEliminar.FlatAppearance.BorderSize = 0;
-            this.BtnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BtnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnEliminar.Location = new System.Drawing.Point(25, 256);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(96, 38);
-            this.BtnEliminar.TabIndex = 119;
-            this.BtnEliminar.TabStop = false;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(344, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(372, 29);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "LISTA DE DOMICILIARIOS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FrmDomiciliario
             // 
@@ -256,11 +257,11 @@
             this.PnlFormularios.ResumeLayout(false);
             this.PnlFormularios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.PnlBuscarUnCliente.ResumeLayout(false);
             this.PnlBuscarUnCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).EndInit();
             this.ResumeLayout(false);
 
         }

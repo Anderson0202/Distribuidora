@@ -6,45 +6,35 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Pedido
+    public class Pedido
     {
 
-        public int IdPedido { get; set; }
-        public DateTime FechaPedido { get; set; }
+        public string Codigo { get; set; }
+        public string IdPersona { get; set; }
+        public DateTime Fecha { get; set; }
         public double SubTotal { get; set; }
+        public List<DetallePedido> DetallesPedidos { get; set; }
+        public double Iva { get; set; }
+        public double TotalIva { get; set; }
         public double Total { get; set; }
-        public double TotalDescuento { get; set; }
-        public Domiciliario domiciliario { get; set; }
-        public List<DetallePedido> DetallesDePedidos { get; set; }
+        public double Descuento { get; set; }
 
-        public void AgregarDetalle(double cantidadKg, Producto producto)
+        public Pedido()
         {
-            DetallePedido detalle = new DetallePedido(cantidadKg, producto);
-            DetallesDePedidos.Add(detalle);
-        }
-
-        public void CalcularSubtotal()
-        {
-
-            SubTotal = DetallesDePedidos.Sum(d=>d.SubTotalPagar );
-            
-        }
-
-
-        public void CalcularDescuentos()
-        {
-
-            TotalDescuento = DetallesDePedidos.Sum(d => d.TotalDescuento);
 
         }
 
-
-        public void CalcularTotal()
+        public Pedido(string codigo, string idPersona, DateTime fecha, double subTotal, List<DetallePedido> detallesPedidos, double iva, double totalIva, double total, double descuento)
         {
-
-            Total = SubTotal - TotalDescuento;
-
+            Codigo = codigo;
+            IdPersona = idPersona;
+            Fecha = fecha;
+            SubTotal = subTotal;
+            DetallesPedidos = detallesPedidos;
+            Iva = iva;
+            TotalIva = totalIva;
+            Total = total;
+            Descuento = descuento;
         }
-
     }
 }

@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    class Descuento
+    public class Descuento
     {
 
         public double PorcentajeDescuento { get; set; }
         public string CodigoDescuento { get; set; }
         public string CodigoProducto { get; set; }
         public string identificacionPersona { get; set; }
-
         public Descuento()
         {
 
