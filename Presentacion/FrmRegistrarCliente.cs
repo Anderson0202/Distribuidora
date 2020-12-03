@@ -12,9 +12,13 @@ namespace Presentacion
 {
     public partial class FrmRegistrarCliente : Form
     {
+        private string ConnectionString;
+        //private VehiculoService vehiculoService;
         public FrmRegistrarCliente()
         {
             InitializeComponent();
+            ConnectionString = ConfigConnection.connectionString;
+          //vehiculoService = new VehiculoService(ConnectionString);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -130,6 +134,11 @@ namespace Presentacion
         private void PbxCerrarRegistro_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

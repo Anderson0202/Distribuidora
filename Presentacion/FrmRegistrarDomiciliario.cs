@@ -64,5 +64,55 @@ namespace Presentacion
             String mensaje = vehiculoService.Guardar(vehiculo);
             MessageBox.Show(mensaje);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PnlFormularioRegistrarDomicliario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtPlaca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSoat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtTecnoMecanica_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

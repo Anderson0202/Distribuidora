@@ -7,10 +7,13 @@ namespace Presentacion
 {
     public partial class FrmDomiciliario : Form
     {
-
+        private string ConnectionString;
+        //private VehiculoService vehiculoService;
         public FrmDomiciliario()
         {
             InitializeComponent();
+            ConnectionString = ConfigConnection.connectionString;
+            //vehiculoService = new VehiculoService(ConnectionString);
         }
 
 
@@ -100,6 +103,26 @@ namespace Presentacion
         private void BtnRegistrar_Click_1(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegistrarDomiciliario>(); 
+        }
+
+        private void BtnVerDetalle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PnlBuscarUnCliente_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

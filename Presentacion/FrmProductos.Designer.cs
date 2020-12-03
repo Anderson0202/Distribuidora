@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlFormulario = new System.Windows.Forms.Panel();
+            this.BtnRegistrar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BtnEditar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.BtnVerDetalle = new System.Windows.Forms.Button();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.PbxCerrarFormulario = new System.Windows.Forms.PictureBox();
             this.PnlBuscarUnPedido = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.TblListaProducto = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PbxCerrarFormulario = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.BtnBuscar = new System.Windows.Forms.Button();
-            this.BtnVerDetalle = new System.Windows.Forms.Button();
-            this.BtnRegistrar = new System.Windows.Forms.Button();
-            this.BtnEditar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
             this.PnlFormulario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
             this.PnlBuscarUnPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlFormulario
@@ -57,7 +57,7 @@
             this.PnlFormulario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlFormulario.BackColor = System.Drawing.Color.Black;
+            this.PnlFormulario.BackColor = System.Drawing.Color.Silver;
             this.PnlFormulario.Controls.Add(this.BtnRegistrar);
             this.PnlFormulario.Controls.Add(this.label2);
             this.PnlFormulario.Controls.Add(this.BtnEditar);
@@ -76,126 +76,6 @@
             this.PnlFormulario.TabIndex = 3;
             this.PnlFormulario.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormulario_Paint);
             // 
-            // PnlBuscarUnPedido
-            // 
-            this.PnlBuscarUnPedido.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.PnlBuscarUnPedido.Controls.Add(this.textBox1);
-            this.PnlBuscarUnPedido.Location = new System.Drawing.Point(462, 425);
-            this.PnlBuscarUnPedido.Name = "PnlBuscarUnPedido";
-            this.PnlBuscarUnPedido.Size = new System.Drawing.Size(208, 71);
-            this.PnlBuscarUnPedido.TabIndex = 104;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(17, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 96;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(460, 439);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 14);
-            this.label2.TabIndex = 95;
-            this.label2.Text = " Ingrese el codigo del Producto ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // TblListaProducto
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.TblListaProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.TblListaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TblListaProducto.BackgroundColor = System.Drawing.Color.Snow;
-            this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblListaProducto.Location = new System.Drawing.Point(207, 68);
-            this.TblListaProducto.Name = "TblListaProducto";
-            this.TblListaProducto.Size = new System.Drawing.Size(738, 266);
-            this.TblListaProducto.TabIndex = 101;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(426, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(305, 29);
-            this.label1.TabIndex = 100;
-            this.label1.Text = "LISTA DE PRODUCTOS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(445, 390);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(238, 148);
-            this.pictureBox2.TabIndex = 99;
-            this.pictureBox2.TabStop = false;
-            // 
-            // PbxCerrarFormulario
-            // 
-            this.PbxCerrarFormulario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PbxCerrarFormulario.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarFormulario.Image")));
-            this.PbxCerrarFormulario.Location = new System.Drawing.Point(12, 487);
-            this.PbxCerrarFormulario.Name = "PbxCerrarFormulario";
-            this.PbxCerrarFormulario.Size = new System.Drawing.Size(33, 31);
-            this.PbxCerrarFormulario.TabIndex = 105;
-            this.PbxCerrarFormulario.TabStop = false;
-            this.PbxCerrarFormulario.Click += new System.EventHandler(this.PbxCerrarFormulario_Click);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(207, 12);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(33, 41);
-            this.pictureBox13.TabIndex = 13;
-            this.pictureBox13.TabStop = false;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
-            this.BtnBuscar.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
-            this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBuscar.Location = new System.Drawing.Point(319, 425);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(108, 42);
-            this.BtnBuscar.TabIndex = 113;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // BtnVerDetalle
-            // 
-            this.BtnVerDetalle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnVerDetalle.BackColor = System.Drawing.Color.Black;
-            this.BtnVerDetalle.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVerDetalle.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnVerDetalle.Image = ((System.Drawing.Image)(resources.GetObject("BtnVerDetalle.Image")));
-            this.BtnVerDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVerDetalle.Location = new System.Drawing.Point(699, 425);
-            this.BtnVerDetalle.Name = "BtnVerDetalle";
-            this.BtnVerDetalle.Size = new System.Drawing.Size(115, 42);
-            this.BtnVerDetalle.TabIndex = 112;
-            this.BtnVerDetalle.Text = "Ver Detalle";
-            this.BtnVerDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnVerDetalle.UseVisualStyleBackColor = false;
-            // 
             // BtnRegistrar
             // 
             this.BtnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -212,6 +92,21 @@
             this.BtnRegistrar.TabStop = false;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = true;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Silver;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(528, 431);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(210, 14);
+            this.label2.TabIndex = 95;
+            this.label2.Text = " Ingrese el codigo del Producto ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // BtnEditar
             // 
@@ -247,6 +142,114 @@
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
             // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnBuscar.BackColor = System.Drawing.Color.Silver;
+            this.BtnBuscar.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
+            this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnBuscar.Location = new System.Drawing.Point(387, 417);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(108, 42);
+            this.BtnBuscar.TabIndex = 113;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_1);
+            // 
+            // BtnVerDetalle
+            // 
+            this.BtnVerDetalle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVerDetalle.BackColor = System.Drawing.Color.Silver;
+            this.BtnVerDetalle.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVerDetalle.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnVerDetalle.Image = ((System.Drawing.Image)(resources.GetObject("BtnVerDetalle.Image")));
+            this.BtnVerDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVerDetalle.Location = new System.Drawing.Point(767, 417);
+            this.BtnVerDetalle.Name = "BtnVerDetalle";
+            this.BtnVerDetalle.Size = new System.Drawing.Size(115, 42);
+            this.BtnVerDetalle.TabIndex = 112;
+            this.BtnVerDetalle.Text = "Ver Detalle";
+            this.BtnVerDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnVerDetalle.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(469, 27);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(33, 41);
+            this.pictureBox13.TabIndex = 13;
+            this.pictureBox13.TabStop = false;
+            // 
+            // PbxCerrarFormulario
+            // 
+            this.PbxCerrarFormulario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PbxCerrarFormulario.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarFormulario.Image")));
+            this.PbxCerrarFormulario.Location = new System.Drawing.Point(12, 487);
+            this.PbxCerrarFormulario.Name = "PbxCerrarFormulario";
+            this.PbxCerrarFormulario.Size = new System.Drawing.Size(33, 31);
+            this.PbxCerrarFormulario.TabIndex = 105;
+            this.PbxCerrarFormulario.TabStop = false;
+            this.PbxCerrarFormulario.Click += new System.EventHandler(this.PbxCerrarFormulario_Click);
+            // 
+            // PnlBuscarUnPedido
+            // 
+            this.PnlBuscarUnPedido.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.PnlBuscarUnPedido.BackColor = System.Drawing.Color.Silver;
+            this.PnlBuscarUnPedido.Controls.Add(this.textBox1);
+            this.PnlBuscarUnPedido.Location = new System.Drawing.Point(530, 417);
+            this.PnlBuscarUnPedido.Name = "PnlBuscarUnPedido";
+            this.PnlBuscarUnPedido.Size = new System.Drawing.Size(208, 71);
+            this.PnlBuscarUnPedido.TabIndex = 104;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox1.Location = new System.Drawing.Point(17, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(178, 20);
+            this.textBox1.TabIndex = 96;
+            // 
+            // TblListaProducto
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.TblListaProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.TblListaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TblListaProducto.BackgroundColor = System.Drawing.Color.Snow;
+            this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TblListaProducto.Location = new System.Drawing.Point(266, 74);
+            this.TblListaProducto.Name = "TblListaProducto";
+            this.TblListaProducto.Size = new System.Drawing.Size(738, 266);
+            this.TblListaProducto.TabIndex = 101;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(508, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(305, 29);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "LISTA DE PRODUCTOS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(513, 382);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(238, 148);
+            this.pictureBox2.TabIndex = 99;
+            this.pictureBox2.TabStop = false;
+            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,12 +261,12 @@
             this.Load += new System.EventHandler(this.FrmProductos_Load);
             this.PnlFormulario.ResumeLayout(false);
             this.PnlFormulario.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).EndInit();
             this.PnlBuscarUnPedido.ResumeLayout(false);
             this.PnlBuscarUnPedido.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace Presentacion
 {
     public partial class FrmProductos : Form
     {
+
+        private string ConnectionString;
+        private ProductoService prodcutoService;
         public FrmProductos()
         {
             InitializeComponent();
+            ConnectionString = ConfigConnection.connectionString;
+            prodcutoService = new ProductoService(ConnectionString);
+            TblListaProducto.DataSource = prodcutoService.ConsultarTodos();
         }
 
         private void BtnRegistrar_Click(object sender, EventArgs e)
@@ -107,6 +114,16 @@ namespace Presentacion
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnBuscar_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRegistrar_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarProducto>();
         }
     }
 }

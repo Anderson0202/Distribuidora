@@ -33,17 +33,17 @@
             this.PbxCerrarFormulario = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.PnlFormulario = new System.Windows.Forms.Panel();
+            this.BtnRegistrar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.TblListaProducto = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.PnlBuscarUnCliente = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnVerDetalle = new System.Windows.Forms.Button();
-            this.BtnRegistrar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.PnlFormulario.SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(284, 25);
+            this.pictureBox18.Location = new System.Drawing.Point(262, 24);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(34, 37);
             this.pictureBox18.TabIndex = 20;
@@ -75,7 +75,7 @@
             // 
             // PnlFormulario
             // 
-            this.PnlFormulario.BackColor = System.Drawing.Color.Black;
+            this.PnlFormulario.BackColor = System.Drawing.Color.Silver;
             this.PnlFormulario.Controls.Add(this.BtnRegistrar);
             this.PnlFormulario.Controls.Add(this.button2);
             this.PnlFormulario.Controls.Add(this.button3);
@@ -94,6 +94,58 @@
             this.PnlFormulario.Size = new System.Drawing.Size(800, 450);
             this.PnlFormulario.TabIndex = 106;
             // 
+            // BtnRegistrar
+            // 
+            this.BtnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnRegistrar.FlatAppearance.BorderSize = 0;
+            this.BtnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrar.ForeColor = System.Drawing.Color.DarkRed;
+            this.BtnRegistrar.Location = new System.Drawing.Point(25, 117);
+            this.BtnRegistrar.Name = "BtnRegistrar";
+            this.BtnRegistrar.Size = new System.Drawing.Size(96, 37);
+            this.BtnRegistrar.TabIndex = 117;
+            this.BtnRegistrar.TabStop = false;
+            this.BtnRegistrar.Text = "Registrar";
+            this.BtnRegistrar.UseVisualStyleBackColor = true;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DarkRed;
+            this.button2.Location = new System.Drawing.Point(25, 178);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 36);
+            this.button2.TabIndex = 118;
+            this.button2.TabStop = false;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DarkRed;
+            this.button3.Location = new System.Drawing.Point(25, 239);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(96, 38);
+            this.button3.TabIndex = 119;
+            this.button3.TabStop = false;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // TblListaProducto
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -106,22 +158,10 @@
             this.TblListaProducto.Size = new System.Drawing.Size(571, 266);
             this.TblListaProducto.TabIndex = 108;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(324, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 29);
-            this.label1.TabIndex = 107;
-            this.label1.Text = "LISTA DE SECRETARIOS";
-            // 
             // PnlBuscarUnCliente
             // 
             this.PnlBuscarUnCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.PnlBuscarUnCliente.BackColor = System.Drawing.Color.Silver;
             this.PnlBuscarUnCliente.Controls.Add(this.textBox1);
             this.PnlBuscarUnCliente.Controls.Add(this.label2);
             this.PnlBuscarUnCliente.Location = new System.Drawing.Point(341, 348);
@@ -141,7 +181,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.BackColor = System.Drawing.Color.Silver;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(7, 13);
@@ -153,7 +193,7 @@
             // BtnBuscar
             // 
             this.BtnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnBuscar.BackColor = System.Drawing.Color.Black;
+            this.BtnBuscar.BackColor = System.Drawing.Color.Silver;
             this.BtnBuscar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBuscar.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
@@ -165,6 +205,7 @@
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // pictureBox2
             // 
@@ -179,7 +220,7 @@
             // BtnVerDetalle
             // 
             this.BtnVerDetalle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnVerDetalle.BackColor = System.Drawing.Color.Black;
+            this.BtnVerDetalle.BackColor = System.Drawing.Color.Silver;
             this.BtnVerDetalle.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVerDetalle.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnVerDetalle.Image = ((System.Drawing.Image)(resources.GetObject("BtnVerDetalle.Image")));
@@ -192,56 +233,18 @@
             this.BtnVerDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnVerDetalle.UseVisualStyleBackColor = false;
             // 
-            // BtnRegistrar
+            // label1
             // 
-            this.BtnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnRegistrar.FlatAppearance.BorderSize = 0;
-            this.BtnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRegistrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistrar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnRegistrar.Location = new System.Drawing.Point(29, 142);
-            this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(96, 37);
-            this.BtnRegistrar.TabIndex = 117;
-            this.BtnRegistrar.TabStop = false;
-            this.BtnRegistrar.Text = "Registrar";
-            this.BtnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Location = new System.Drawing.Point(29, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 36);
-            this.button2.TabIndex = 118;
-            this.button2.TabStop = false;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DarkRed;
-            this.button3.Location = new System.Drawing.Point(29, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 38);
-            this.button3.TabIndex = 119;
-            this.button3.TabStop = false;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(302, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(346, 29);
+            this.label1.TabIndex = 107;
+            this.label1.Text = "LISTA DE SECRETARIOS";
             // 
             // FrmSecretario
             // 

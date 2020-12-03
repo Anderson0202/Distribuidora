@@ -17,14 +17,14 @@ namespace Entity
         public string Categoria { get; set; }
         public string Nombre { get; set; }
         public double PesoMinimo { get; set; }
-        public string Descripcion { get; set; }
+        
 
         public Producto()
         {
 
         }
 
-        public Producto(string codigo, double peso, double precio, string categoria, string nombre, double pesoMinimo, string descripcion)
+        public Producto(string codigo, double peso, double precio, string categoria, string nombre, double pesoMinimo)
         {
             Codigo = codigo;
             Peso = peso;
@@ -32,7 +32,7 @@ namespace Entity
             Categoria = categoria;
             Nombre = nombre;
             PesoMinimo = pesoMinimo;
-            Descripcion = descripcion;
+          
         }
     }
 }

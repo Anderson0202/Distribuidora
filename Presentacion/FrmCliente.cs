@@ -130,5 +130,10 @@ namespace Presentacion
         {
 
         }
+
+        private void BtnRegistrar_Click_2(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarCliente>();
+        }
     }
 }

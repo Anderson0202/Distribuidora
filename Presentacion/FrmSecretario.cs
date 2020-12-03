@@ -12,9 +12,14 @@ namespace Presentacion
 {
     public partial class FrmSecretario : Form
     {
+        private string ConnectionString;
+        //private VehiculoService vehiculoService;
+
         public FrmSecretario()
         {
             InitializeComponent();
+            ConnectionString = ConfigConnection.connectionString;
+            //vehiculoService = new VehiculoService(ConnectionString);
         }
 
 
@@ -88,6 +93,16 @@ namespace Presentacion
         private void PbxCerrarFormulario_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnRegistrar_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarSecretario>();
         }
     }
 }

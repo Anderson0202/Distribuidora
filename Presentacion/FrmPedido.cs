@@ -12,10 +12,14 @@ namespace Presentacion
 {
     public partial class FrmPedido : Form
     {
+        private string ConnectionString;
+        //private VehiculoService vehiculoService;
         public FrmPedido()
         {
             InitializeComponent();
             PnlBuscarUnPedido.Visible = false;
+            ConnectionString = ConfigConnection.connectionString;
+            //vehiculoService = new VehiculoService(ConnectionString);
         }
 
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
@@ -128,6 +132,11 @@ namespace Presentacion
         private void BtnEditar_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnRegistrar_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegistrarPedido>();
         }
     }
 }

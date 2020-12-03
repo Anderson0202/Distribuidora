@@ -123,7 +123,7 @@ namespace BLL
         public DetallePedido CalcularDetalle(Producto producto, Descuento descuento)
         {
             DetallePedido detalleDePedido = new DetallePedido();
-            detalleDePedido.Descripcion = producto.Descripcion;
+            //detalleDePedido.Descripcion = producto.Descripcion;
             detalleDePedido.CodProducto = producto.Codigo;
             detalleDePedido.Cantidad = producto.Peso;
             detalleDePedido.ValorUnitario = producto.Precio;
