@@ -9,3 +9,5 @@ C:\Users\eva_01\source\repos\DistribuidoraAnya\BLL\obj\Debug\BLL.csproj.CoreComp
 C:\Users\eva_01\source\repos\DistribuidoraAnya\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\eva_01\source\repos\DistribuidoraAnya\BLL\obj\Debug\BLL.dll
 C:\Users\eva_01\source\repos\DistribuidoraAnya\BLL\obj\Debug\BLL.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\BLL\bin\Debug\Infraestructura.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\BLL\bin\Debug\Infraestructura.pdb

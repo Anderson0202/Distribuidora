@@ -1,0 +1,71 @@
+﻿CREATE TABLE PRODUCTO
+(
+
+	Codigo VARCHAR(10) PRIMARY KEY NOT NULL,
+    Peso REAL NOT NULL,
+    Precio REAL NOT NULL,
+    Categoria VARCHAR(14) NOT NULL,
+    Nombre VARCHAR(30) NOT NULL,
+    PesoMinimo REAL NOT NULL
+
+)
+
+
+CREATE TABLE CLIENTE
+(
+  Identificacion VARCHAR(12) PRIMARY KEY NOT NULL,
+  Nombre VARCHAR(30) NOT NULL,
+  Apellido VARCHAR(30) NOT NULL,
+  Telefono VARCHAR(14) NOT NULL,
+  Tipo VARCHAR(14) DEFAULT('cliente') NOT NULL,
+  Direccion VARCHAR(20) NOT NULL, 
+  TipoCliente VARCHAR(14) NOT NULL,
+  Email VARCHAR(40) NULL
+)
+
+--DROP TABLE CLIENTE
+
+CREATE TABLE DESCUENTO
+(
+
+    PorcentajeDescuento REAL NOT NULL,
+    CodigoDescuento VARCHAR(14) NOT NULL,
+    CodigoProducto VARCHAR(14) NOT NULL,
+    identificacionPersona VARCHAR(14) NOT NULL
+
+)
+
+CREATE TABLE DETALLEPEDIDO
+(
+    Codigo VARCHAR(14) PRIMARY KEY NOT NULL,
+    CodigoPedido VARCHAR(14) NOT NULL,
+    CodigoProducto VARCHAR(14) NOT NULL,
+    Descripcion VARCHAR(60) NULL,
+    Descuento REAL NULL,
+    Cantidad REAL NOT NULL,
+    ValorUnitario REAL NOT NULL,
+    TotalDescuento REAL NULL,
+    SubTotal REAL NOT NULL, 
+    TotalConDescuento REAL NULL,
+    Total REAL NOT NULL
+
+)
+
+CREATE TABLE DOMICILIARIO
+(
+    Identificacion VARCHAR(12) PRIMARY KEY NOT NULL,
+    Nombre VARCHAR(30) NOT NULL,
+    Apellido VARCHAR(30) NOT NULL,
+    Telefono VARCHAR(14) NOT NULL,
+    Tipo VARCHAR(14) DEFAULT ('domiciliario') NOT NULL,
+    FechaVPC SMALLDATETIME NOT NULL
+    
+)
+
+CREATE TABLE VEHICULO
+(
+    Placa VARCHAR(8) NOT NULL,
+    FechaVS SMALLDATETIME NOT NULL,
+    FechaVTM SMALLDATETIME NOT NULL,
+    IdDomiciliario VARCHAR(14) 
+)

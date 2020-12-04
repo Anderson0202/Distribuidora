@@ -1,0 +1,9 @@
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\bin\Debug\Infraestructura.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\bin\Debug\Infraestructura.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\bin\Debug\Entity.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\bin\Debug\Entity.pdb
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\obj\Debug\Infraestructura.csprojAssemblyReference.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\obj\Debug\Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\obj\Debug\Infraestructura.csproj.CopyComplete
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\obj\Debug\Infraestructura.dll
+C:\Users\eva_01\source\repos\DistribuidoraAnya\Infraestructura\obj\Debug\Infraestructura.pdb

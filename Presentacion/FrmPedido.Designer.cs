@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPedido));
             this.PnlFormulario = new System.Windows.Forms.Panel();
             this.BtnRegistrar = new System.Windows.Forms.Button();
@@ -61,11 +61,11 @@
             // PnlFormulario
             // 
             this.PnlFormulario.BackColor = System.Drawing.Color.Silver;
+            this.PnlFormulario.Controls.Add(this.PnlBuscarUnPedido);
             this.PnlFormulario.Controls.Add(this.BtnRegistrar);
             this.PnlFormulario.Controls.Add(this.BtnEditar);
             this.PnlFormulario.Controls.Add(this.BtnEliminar);
             this.PnlFormulario.Controls.Add(this.TblListaProducto);
-            this.PnlFormulario.Controls.Add(this.PnlBuscarUnPedido);
             this.PnlFormulario.Controls.Add(this.BtnBuscar);
             this.PnlFormulario.Controls.Add(this.pictureBox2);
             this.PnlFormulario.Controls.Add(this.BtnVerDetalle);
@@ -139,11 +139,12 @@
             // 
             // TblListaProducto
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.TblListaProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            this.TblListaProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.TblListaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TblListaProducto.BackgroundColor = System.Drawing.Color.Snow;
             this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblListaProducto.Location = new System.Drawing.Point(196, 81);
+            this.TblListaProducto.Location = new System.Drawing.Point(196, 132);
             this.TblListaProducto.Name = "TblListaProducto";
             this.TblListaProducto.Size = new System.Drawing.Size(619, 266);
             this.TblListaProducto.TabIndex = 16;
@@ -228,7 +229,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(377, 28);
+            this.pictureBox15.Location = new System.Drawing.Point(363, 28);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(34, 36);
             this.pictureBox15.TabIndex = 18;
@@ -247,9 +248,10 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.BackColor = System.Drawing.Color.Silver;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(231, 50);
+            this.pictureBox4.Location = new System.Drawing.Point(231, 101);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(34, 39);
             this.pictureBox4.TabIndex = 96;
@@ -257,9 +259,10 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox5.BackColor = System.Drawing.Color.Silver;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(265, 50);
+            this.pictureBox5.Location = new System.Drawing.Point(265, 101);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(34, 39);
             this.pictureBox5.TabIndex = 97;
@@ -267,9 +270,10 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.Silver;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(197, 50);
+            this.pictureBox3.Location = new System.Drawing.Point(197, 101);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(34, 39);
             this.pictureBox3.TabIndex = 95;
@@ -281,7 +285,7 @@
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(417, 28);
+            this.label1.Location = new System.Drawing.Point(403, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 29);
             this.label1.TabIndex = 15;

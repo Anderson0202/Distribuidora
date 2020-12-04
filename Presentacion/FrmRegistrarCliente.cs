@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +15,12 @@ namespace Presentacion
     public partial class FrmRegistrarCliente : Form
     {
         private string ConnectionString;
-        //private VehiculoService vehiculoService;
+        private ClienteService ClienteService;
         public FrmRegistrarCliente()
         {
             InitializeComponent();
             ConnectionString = ConfigConnection.connectionString;
-          //vehiculoService = new VehiculoService(ConnectionString);
+            ClienteService = new ClienteService(ConnectionString);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -138,7 +140,17 @@ namespace Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Cliente cliente = new Cliente();
+            cliente.Identificacion = txIdentificacion.Text;
+            cliente.Nombre = txNombre.Text;
+            cliente.Apellido = txApellido.Text;
+            cliente.Telefono = txTelefono.Text;
+            cliente.Tipo = "cliente";
+            cliente.Direccion = txDireccion.Text;
+            cliente.TipoCliente = cmbTipoCliente.Text;
+            cliente.Email = txCorreo.Text;
+            String mensaje = ClienteService.Guardar(cliente);
+            MessageBox.Show(mensaje);
         }
     }
 }

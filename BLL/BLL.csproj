@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministradorService.cs" />
+    <Compile Include="ClienteService.cs" />
     <Compile Include="PedidoService.cs" />
     <Compile Include="ProductoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +56,10 @@
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{603418ff-fa4f-486f-8ccf-309279418785}</Project>
       <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
+      <Project>{10092cba-d7b8-4ae3-9015-0cec9ad399f5}</Project>
+      <Name>Infraestructura</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

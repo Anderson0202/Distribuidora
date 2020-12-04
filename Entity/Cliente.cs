@@ -18,6 +18,11 @@ namespace Entity
 
         }
 
+        public Cliente(string email)
+        {
+            Email = email;
+        }   
+
         public Cliente(string direccion, string tipoCliente, string email)
         {
             Direccion = direccion;

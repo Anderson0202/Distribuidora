@@ -124,7 +124,7 @@ namespace BLL
         {
             DetallePedido detalleDePedido = new DetallePedido();
             //detalleDePedido.Descripcion = producto.Descripcion;
-            detalleDePedido.CodProducto = producto.Codigo;
+            detalleDePedido.CodigoProducto = producto.Codigo;
             detalleDePedido.Cantidad = producto.Peso;
             detalleDePedido.ValorUnitario = producto.Precio;
 
@@ -139,7 +139,7 @@ namespace BLL
             detalleDePedido.SubTotal = detalleDePedido.ValorUnitario * detalleDePedido.Cantidad;
             detalleDePedido.TotalDescuento = detalleDePedido.SubTotal * (detalleDePedido.Descuento / 100);
             detalleDePedido.TotalConDescuento = detalleDePedido.SubTotal - detalleDePedido.TotalDescuento;
-            detalleDePedido.total = detalleDePedido.SubTotal - detalleDePedido.TotalDescuento;
+            detalleDePedido.Total = detalleDePedido.SubTotal - detalleDePedido.TotalDescuento;
             detalleDePedido.Codigo = null;
             return detalleDePedido;
         }

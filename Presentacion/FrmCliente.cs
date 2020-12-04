@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,14 @@ namespace Presentacion
 {
     public partial class FrmCliente : Form
     {
+        private string ConnectionString;
+        private ClienteService ClienteService   ;
         public FrmCliente()
         {
             InitializeComponent();
+            ConnectionString = ConfigConnection.connectionString;
+            ClienteService = new ClienteService(ConnectionString);
+            TblListaProducto.DataSource = ClienteService.ConsultarTodos();
         }
 
         private void FrmCliente_Load(object sender, EventArgs e)
