@@ -3,25 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
 using Entity;
 
 namespace BLL
 {
-    class PedidoService
+    public class PedidoService
     {
-        
 
-        public List<Pedido> Pedidos()
+        private ConnectionManager connectionManager;
+        public ClienteRepository ClienteRepository;
+
+        private PedidoRepository PedidoRepository;
+
+        public PedidoService(string connectionString)
         {
-            List<Pedido> pedidos = new List<Pedido>();
-            return pedidos;// returna todos los pedidos registrados en la base de datos.
+            connectionManager = new ConnectionManager(connectionString);
+            ClienteRepository = new ClienteRepository(connectionManager);
+            PedidoRepository = new PedidoRepository(connectionManager);
         }
+
+        public List<Pedido> ConsultarPedidos()
+        {
+            List<Pedido> pedidos = PedidoRepository.ConsultarTodos();
+            return pedidos;
+        }
+
 
         public PedidoResponse Guardar(Pedido pedido)
         {
             try
             {
-                //Metodo que agrega el pedido a la base de datos(InicializarCodigos(pedido));
+                Pedido pedido1 = InicializarCodigos(pedido);
+                connectionManager.Open();
+                PedidoRepository.Guardar(pedido1);
+                connectionManager.Close();
+                foreach (DetallePedido detalle in pedido.DetallesPedidos)
+                {
+                    connectionManager.Open();
+                    PedidoRepository.GuardarDetalle(detalle);
+                    connectionManager.Close();
+                }
                 return new PedidoResponse(pedido);
             }
             catch (Exception e)
@@ -40,11 +62,15 @@ namespace BLL
 
         public Pedido GenerarCodigosDetallesPedido(Pedido pedido)
         {
-            int cantidadPedidosRegistrados = 0; //metodo que trae la cantidad de detalles de pedidos registrados en la base de datos;
+            connectionManager.Open();
+            int cantidadPedidosRegistrados = PedidoRepository.CodigoDetallePedido();
+            connectionManager.Close();
             bool Parar = true;
             while (Parar)
             {
-                DetallePedido detalleDePedido = null; // trae de la base de datos un detalle de pedido con el codito de prueba(cantidadPedidosRegistrados.ToString());
+                connectionManager.Open();
+                DetallePedido detalleDePedido = PedidoRepository.BuscarPorCodigoDetalle(cantidadPedidosRegistrados.ToString());
+                connectionManager.Close();
                 if (detalleDePedido == null)
                 {
                     Parar = false;
@@ -62,11 +88,16 @@ namespace BLL
 
         public Pedido GenerarCodigoPedido(Pedido pedido)
         {
-            int cantidadPedidosRegistrados = 0;/*Metodo que trae de la base de datos la cantidad de pedidos registrados;*/
+            connectionManager.Open();
+            int cantidadPedidosRegistrados = PedidoRepository.CodigoPedido();
+            connectionManager.Close();
             bool Parar = true;
             while (Parar)
             {
-                Pedido pedidoEncontrado = null; //Metodo que tare un pedido registrado con el codigo de prueba(cantidadPedidosRegistrados.ToString())
+                connectionManager.Open();
+                Pedido pedidoEncontrado = PedidoRepository.BuscarPorCodigoPedido(cantidadPedidosRegistrados.ToString());
+                connectionManager.Close();
+                    
                 if (pedidoEncontrado == null)
                 {
                     Parar = false;
@@ -79,8 +110,8 @@ namespace BLL
 
         public Pedido GenerarPedido(List<Producto> Productos, Cliente Cliente)
         {
-
-            List<Descuento> Descuentos = null; /* Metodo que trae de la base de datos los descuentos registrados del cliente qie se recive por parametros*/
+            /* Metodo que trae de la base de datos los descuentos registrados del cliente qie se recive por parametros*/
+            List<Descuento> Descuentos = new List<Descuento>(); 
             List<DetallePedido> detalleDePedidos = GenerarDetallesPedido(Productos, Descuentos);
             Pedido pedido = CalcularPedido(detalleDePedidos);
             pedido.Fecha = DateTime.Parse(DateTime.Now.ToString("dd/MM/yyyy"));
@@ -143,6 +174,21 @@ namespace BLL
             detalleDePedido.Codigo = null;
             return detalleDePedido;
         }
+
+       
+
+        public Cliente BuscarxIdentificacion(string identificacion)
+        {
+            connectionManager.Open();
+            Cliente cliente = ClienteRepository.BuscarPorIdentificacion(identificacion);
+            connectionManager.Close();
+            if (cliente == null)
+            {
+                return null;
+            }
+            return cliente;
+        }
+
     }
 
     public class PedidoResponse

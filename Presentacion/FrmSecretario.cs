@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,13 +14,14 @@ namespace Presentacion
     public partial class FrmSecretario : Form
     {
         private string ConnectionString;
-        //private VehiculoService vehiculoService;
+        private SecretarioService secretarioService;
 
         public FrmSecretario()
         {
             InitializeComponent();
             ConnectionString = ConfigConnection.connectionString;
-            //vehiculoService = new VehiculoService(ConnectionString);
+            secretarioService = new SecretarioService(ConnectionString);
+            TblListaSecretarios.DataSource = secretarioService.ConsultarTodos();
         }
 
 

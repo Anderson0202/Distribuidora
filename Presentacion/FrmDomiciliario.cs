@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -8,12 +9,16 @@ namespace Presentacion
     public partial class FrmDomiciliario : Form
     {
         private string ConnectionString;
-        //private VehiculoService vehiculoService;
+        private VehiculoService vehiculoService;
+        private DomiciliarioService domiciliarioService;
         public FrmDomiciliario()
         {
             InitializeComponent();
             ConnectionString = ConfigConnection.connectionString;
-            //vehiculoService = new VehiculoService(ConnectionString);
+            vehiculoService = new VehiculoService(ConnectionString);
+            domiciliarioService = new DomiciliarioService(ConnectionString);
+            TblListaDomiciliarios.DataSource = domiciliarioService.ConsultarTodos();
+            TblListaVehiculos.DataSource = vehiculoService.ConsultarTodos();
         }
 
 
@@ -121,6 +126,11 @@ namespace Presentacion
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

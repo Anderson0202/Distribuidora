@@ -14,6 +14,8 @@ namespace DAL
 
         private SqlConnection connection;
 
+        private List<Cliente> Clientes = new List<Cliente>();
+
         public ClienteRepository(ConnectionManager _connectionManager)
         {
             connectionManager = _connectionManager;
@@ -76,6 +78,39 @@ namespace DAL
             
             return cliente;
         }
+
+        private bool EsEncontrado(string identificacioRegistrada, string identificacionBuscada)
+        {
+            return identificacioRegistrada == identificacionBuscada;
+        }
+
+        public Cliente Buscar(string identificacion)
+        {
+            List<Cliente> clientes = ConsultarTodos();
+            foreach (var item in clientes)
+            {
+                if (EsEncontrado(item.Identificacion, identificacion))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public Cliente BuscarPorIdentificacion(string identificacion)
+        {
+            SqlDataReader dataReader;
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "select * from Cliente where Identificacion=@Identificacion";
+                command.Parameters.AddWithValue("@Identificacion", identificacion);
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+                return DataReaderMapCliente(dataReader);
+            }
+        }
+
+
 
     }
 }

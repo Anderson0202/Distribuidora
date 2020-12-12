@@ -149,7 +149,7 @@ namespace Presentacion
             cliente.Direccion = txDireccion.Text;
             cliente.TipoCliente = cmbTipoCliente.Text;
             cliente.Email = txCorreo.Text;
-            String mensaje = ClienteService.Guardar(cliente);
+            String mensaje = Convert.ToString(ClienteService.Guardar(cliente));
             MessageBox.Show(mensaje);
         }
     }

@@ -21,12 +21,12 @@ namespace BLL
 
         }
 
-        public string Guardar(Vehiculo vehiculo)
+        public string Guardar(Vehiculo vehiculo, string idDomiciliario)
         {
             try
             {
                 connectionManager.Open();
-                VehiculoRepository.Guardar(vehiculo);
+                VehiculoRepository.Guardar(vehiculo, idDomiciliario);
                 return $"Se guardaron los datos satisfactoriamente n_n";
             }
             catch (Exception e)
@@ -35,6 +35,25 @@ namespace BLL
                 return $"Error de la aplicacion : {e.Message}";
             }
             finally { connectionManager.Close(); }
+        }
+
+        public List<Vehiculo> ConsultarTodos()
+        {
+
+            try
+            {
+                connectionManager.Open();
+                List<Vehiculo> vehiculo = VehiculoRepository.ConsultarTodos();
+                connectionManager.Close();
+                return vehiculo;
+            }
+            catch (Exception e)
+            {
+
+                return null;
+            }
+            finally { connectionManager.Close(); }
+
         }
 
     }

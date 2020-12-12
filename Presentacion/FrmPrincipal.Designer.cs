@@ -71,6 +71,7 @@ namespace Presentacion
             this.PnlBotonGestionCliente = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.PnlBotonGestionProducto = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.BtnSecretario = new System.Windows.Forms.Button();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
@@ -89,7 +90,6 @@ namespace Presentacion
             this.BtnRestaurar = new System.Windows.Forms.PictureBox();
             this.BtnMaximizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.PnlContenedorPrincipal.SuspendLayout();
             this.PnlFormularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -532,7 +532,6 @@ namespace Presentacion
             this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button12.Size = new System.Drawing.Size(152, 23);
             this.button12.TabIndex = 0;
-            this.button12.Text = "Registrar";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
             // 
@@ -557,7 +556,6 @@ namespace Presentacion
             this.button9.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button9.Size = new System.Drawing.Size(152, 23);
             this.button9.TabIndex = 0;
-            this.button9.Text = "Registrar";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = true;
             // 
@@ -582,7 +580,6 @@ namespace Presentacion
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(152, 23);
             this.button6.TabIndex = 0;
-            this.button6.Text = "Registrar";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -607,7 +604,6 @@ namespace Presentacion
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(152, 23);
             this.button3.TabIndex = 0;
-            this.button3.Text = "Registrar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -618,6 +614,23 @@ namespace Presentacion
             this.PnlBotonGestionProducto.Name = "PnlBotonGestionProducto";
             this.PnlBotonGestionProducto.Size = new System.Drawing.Size(152, 85);
             this.PnlBotonGestionProducto.TabIndex = 20;
+            // 
+            // button2
+            // 
+            this.button2.AllowDrop = true;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 7);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(152, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Abastecer";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // pictureBox18
             // 
@@ -842,23 +855,6 @@ namespace Presentacion
             this.BtnCerrar.TabIndex = 0;
             this.BtnCerrar.TabStop = false;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            // 
-            // button2
-            // 
-            this.button2.AllowDrop = true;
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 7);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(152, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Abastecer";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // FrmPrincipal
             // 

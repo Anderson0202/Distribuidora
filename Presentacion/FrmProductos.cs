@@ -15,13 +15,13 @@ namespace Presentacion
     {
 
         private string ConnectionString;
-        private ProductoService prodcutoService;
+        private ProductoService productoService;
         public FrmProductos()
         {
             InitializeComponent();
             ConnectionString = ConfigConnection.connectionString;
-            prodcutoService = new ProductoService(ConnectionString);
-            TblListaProducto.DataSource = prodcutoService.ConsultarTodos();
+            productoService = new ProductoService(ConnectionString);
+            TblListaProducto.DataSource = productoService.ConsultarTodos();
         }
 
         private void BtnRegistrar_Click(object sender, EventArgs e)

@@ -33,5 +33,3 @@ C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\System.Sec
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\System.Security.Permissions.xml
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\DAL.pdb
-C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Infraestructura.dll
-C:\Users\eva_01\source\repos\DistribuidoraAnya\Presentacion\bin\Debug\Infraestructura.pdb

@@ -40,21 +40,21 @@
             this.TxtSoat = new System.Windows.Forms.TextBox();
             this.TxtPlaca = new System.Windows.Forms.TextBox();
             this.PbxCerrarRegistro = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txApellido = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txTelefono = new System.Windows.Forms.TextBox();
+            this.txNombre = new System.Windows.Forms.TextBox();
+            this.txIdentificacion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txFvpc = new System.Windows.Forms.TextBox();
             this.PnlFormularioRegistrarDomicliario.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarRegistro)).BeginInit();
@@ -67,7 +67,7 @@
             this.PnlFormularioRegistrarDomicliario.BackColor = System.Drawing.Color.Silver;
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.panel2);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.PbxCerrarRegistro);
-            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.button2);
+            this.PnlFormularioRegistrarDomicliario.Controls.Add(this.btnGuardar);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.label12);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.pictureBox2);
             this.PnlFormularioRegistrarDomicliario.Controls.Add(this.panel1);
@@ -192,20 +192,20 @@
             this.PbxCerrarRegistro.TabStop = false;
             this.PbxCerrarRegistro.Click += new System.EventHandler(this.PbxCerrarRegistro_Click);
             // 
-            // button2
+            // btnGuardar
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.DarkRed;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(466, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 62);
-            this.button2.TabIndex = 113;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnGuardar.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnGuardar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.Location = new System.Drawing.Point(466, 396);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(108, 62);
+            this.btnGuardar.TabIndex = 113;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.button2_Click);
             // 
             // label12
             // 
@@ -231,16 +231,16 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txFvpc);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txApellido);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txTelefono);
+            this.panel1.Controls.Add(this.txNombre);
+            this.panel1.Controls.Add(this.txIdentificacion);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(145, 60);
             this.panel1.Name = "panel1";
@@ -271,16 +271,6 @@
             this.label4.TabIndex = 98;
             this.label4.Text = "Telefono";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(153, 237);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 21);
-            this.comboBox1.TabIndex = 111;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -293,14 +283,14 @@
             this.label7.TabIndex = 100;
             this.label7.Text = "Apellido";
             // 
-            // textBox4
+            // txApellido
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(149, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
-            this.textBox4.TabIndex = 99;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txApellido.BackColor = System.Drawing.Color.White;
+            this.txApellido.Location = new System.Drawing.Point(149, 138);
+            this.txApellido.Name = "txApellido";
+            this.txApellido.Size = new System.Drawing.Size(202, 20);
+            this.txApellido.TabIndex = 99;
+            this.txApellido.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label3
             // 
@@ -326,32 +316,32 @@
             this.label5.TabIndex = 110;
             this.label5.Text = "Fecha de vencimiento de permiso de conduccion";
             // 
-            // textBox3
+            // txTelefono
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(149, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 20);
-            this.textBox3.TabIndex = 95;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txTelefono.BackColor = System.Drawing.Color.White;
+            this.txTelefono.Location = new System.Drawing.Point(149, 178);
+            this.txTelefono.Name = "txTelefono";
+            this.txTelefono.Size = new System.Drawing.Size(202, 20);
+            this.txTelefono.TabIndex = 95;
+            this.txTelefono.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // txNombre
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(149, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 20);
-            this.textBox2.TabIndex = 94;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txNombre.BackColor = System.Drawing.Color.White;
+            this.txNombre.Location = new System.Drawing.Point(149, 99);
+            this.txNombre.Name = "txNombre";
+            this.txNombre.Size = new System.Drawing.Size(202, 20);
+            this.txNombre.TabIndex = 94;
+            this.txNombre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // txIdentificacion
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(149, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 93;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txIdentificacion.BackColor = System.Drawing.Color.White;
+            this.txIdentificacion.Location = new System.Drawing.Point(149, 62);
+            this.txIdentificacion.Name = "txIdentificacion";
+            this.txIdentificacion.Size = new System.Drawing.Size(202, 20);
+            this.txIdentificacion.TabIndex = 93;
+            this.txIdentificacion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -364,6 +354,14 @@
             this.label1.Size = new System.Drawing.Size(213, 29);
             this.label1.TabIndex = 92;
             this.label1.Text = " DOMICILIARIO";
+            // 
+            // txFvpc
+            // 
+            this.txFvpc.BackColor = System.Drawing.Color.White;
+            this.txFvpc.Location = new System.Drawing.Point(149, 248);
+            this.txFvpc.Name = "txFvpc";
+            this.txFvpc.Size = new System.Drawing.Size(202, 20);
+            this.txFvpc.TabIndex = 111;
             // 
             // FrmRegistrarDomiciliario
             // 
@@ -389,9 +387,8 @@
 
         private System.Windows.Forms.Panel PnlFormularioRegistrarDomicliario;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtTecnoMecanica;
@@ -402,16 +399,17 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txApellido;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txTelefono;
+        private System.Windows.Forms.TextBox txNombre;
+        private System.Windows.Forms.TextBox txIdentificacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox PbxCerrarRegistro;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txFvpc;
     }
 }

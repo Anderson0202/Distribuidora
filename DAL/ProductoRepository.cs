@@ -69,5 +69,18 @@ namespace DAL
             return producto;
         }
 
+        public Producto BuscarPorCodigo(string codigo)
+        {
+            SqlDataReader dataReader;
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "select * from PRODUCTO where Codigo=@Codigo";
+                command.Parameters.AddWithValue("@Codigo", codigo);
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+                return DataReaderMapProducto(dataReader);
+            }
+        }
+
     }
 }

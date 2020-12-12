@@ -9,33 +9,62 @@ namespace DAL
 {
     public class VehiculoRepository
     {
+        private ConnectionManager connectionManager { get; }
+
+        private SqlConnection connection;
+                
         public VehiculoRepository(ConnectionManager _connectionManager)
         {
             connectionManager = _connectionManager;
             connection = connectionManager._conexion;
         }
 
-        private ConnectionManager connectionManager { get; }
 
-        private SqlConnection connection;
-
-        public void Guardar(Vehiculo vehiculo)
+        public void Guardar(Vehiculo vehiculo, string idDomiciliario)
         {
             using(var command = connection.CreateCommand()) 
             {
 
-
-                command.CommandText = "Insert Into Vehiculo (PLACA, FECHAVENCIMIENTOSOAT, FechaVencimientoTecnoMecanica )" +
-                    " VALUES (@PLACA, @FECHAVENCIMIENTOSOAT, @FechaVencimientoTecnoMecanica )";
-                command.Parameters.AddWithValue("@PLACA",vehiculo.Placa);
-                command.Parameters.AddWithValue("@FECHAVENCIMIENTOSOAT", vehiculo.FechaVencimientoSoat);
-                command.Parameters.AddWithValue("@FechaVencimientoTecnoMecanica", vehiculo.FechaVenciciemtoTecnoMecanica);
+                command.CommandText = "Insert Into Vehiculo (Placa, FechaVS, FechaVTM, Fk_IdDomiciliario )" +
+                    " VALUES (@Placa, @FechaVS, @FechaVTM, @Fk_IdDomiciliario )";
+                command.Parameters.AddWithValue("@Placa", vehiculo.Placa);
+                command.Parameters.AddWithValue("@FechaVS", vehiculo.FechaVencimientoSoat);
+                command.Parameters.AddWithValue("@FechaVTM", vehiculo.FechaVenciciemtoTecnoMecanica);
+                command.Parameters.AddWithValue("@Fk_IdDomiciliario", idDomiciliario);
                 command.ExecuteNonQuery();
                 
-
             }
             
+        }
 
+        public List<Vehiculo> ConsultarTodos()
+        {
+            List<Vehiculo> ListaDeVehiculos = new List<Vehiculo>();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "Select * from VEHICULO";
+                var dataReader = command.ExecuteReader();
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        Vehiculo vehiculo = DataReaderMapVehiculo(dataReader);
+                        ListaDeVehiculos.Add(vehiculo);
+                    }
+                }
+            }
+            return ListaDeVehiculos;
+        }
+
+        private Vehiculo DataReaderMapVehiculo(SqlDataReader dataReader)
+        {
+            if (!dataReader.HasRows) return null;
+            Vehiculo vehiculo = new Vehiculo();
+            vehiculo.Placa = (string)dataReader["Placa"];
+            vehiculo.FechaVencimientoSoat = (DateTime.Parse(dataReader["FechaVS"].ToString()));
+            vehiculo.FechaVenciciemtoTecnoMecanica = (DateTime.Parse(dataReader["FechaVTM"].ToString()));
+            
+            return vehiculo;
         }
 
     }

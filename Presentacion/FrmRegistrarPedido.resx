@@ -118,17 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAVdJREFUOE+N
-        080rRFEcxnHDNFNWrKQYGknKxpKyEGVhJRvrqclC8R/IElOykPISyVLZiT9AdgpNDcqShYWFvGZxfJ9z
-        f+Ne7lXz1KfpPr9zzsy9M1MXjXNuGPso4wbHKCJtS5LDggw28YxljGEUs7jFOXK2PB6Gu7hAm1U/odPh
-        W9BBTVaHoRzCE1qsioVZCidYsioM5R4WkcW/98pMb/SIBquCUFxhHBNotzoWbcQXOq0KQnGNEcxg2urE
-        MH9Dj10GoTjCHAbwgA4b/Qp9Nz7QaFUQigIqSEO/gXtMIWtLfLhexaFdhqHURn2Fa6iHNm9jHf7j8jqJ
-        d/T6TX/DII876KsahH/SvHahBH105RTzSPmN0VA2Q79CPYdPvOAVB+jDGarZQPwQRQO0IoeM1eoXEI1u
-        MfmQpLBYz2dHOyMp2bi2sEGH6H9RTdlGtYdNusUVXDrn+r8BtVq9LdIIA1QAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAVdJREFUOE+N
@@ -167,6 +156,17 @@
         QAfLjrShWOel9LrjyusOl0dX934va30cb2qhgBOOtaGo708vmXq1TqGfUriR8Hca9cnz/MBZ1FV/WYUC
         1DMZDjooDNK9vxPdMR/GzUK6P32/MExX9+Mwth6PsPrR3AsMHM7DaFAY3noc6z7wzerRXPA4bjT+AuHG
         E32b70o3AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAVdJREFUOE+N
+        080rRFEcxnHDNFNWrKQYGknKxpKyEGVhJRvrqclC8R/IElOykPISyVLZiT9AdgpNDcqShYWFvGZxfJ9z
+        f+Ne7lXz1KfpPr9zzsy9M1MXjXNuGPso4wbHKCJtS5LDggw28YxljGEUs7jFOXK2PB6Gu7hAm1U/odPh
+        W9BBTVaHoRzCE1qsioVZCidYsioM5R4WkcW/98pMb/SIBquCUFxhHBNotzoWbcQXOq0KQnGNEcxg2urE
+        MH9Dj10GoTjCHAbwgA4b/Qp9Nz7QaFUQigIqSEO/gXtMIWtLfLhexaFdhqHURn2Fa6iHNm9jHf7j8jqJ
+        d/T6TX/DII876KsahH/SvHahBH105RTzSPmN0VA2Q79CPYdPvOAVB+jDGarZQPwQRQO0IoeM1eoXEI1u
+        MfmQpLBYz2dHOyMp2bi2sEGH6H9RTdlGtYdNusUVXDrn+r8BtVq9LdIIA1QAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="PbxCerrarRegistro.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

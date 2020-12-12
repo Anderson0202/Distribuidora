@@ -34,7 +34,7 @@
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
-            this.TblListaProducto = new System.Windows.Forms.DataGridView();
+            this.TblListaDomiciliarios = new System.Windows.Forms.DataGridView();
             this.PnlBuscarUnCliente = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,21 +44,26 @@
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.PbxCerrarFormulario = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.TblListaVehiculos = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.PnlFormularios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblListaDomiciliarios)).BeginInit();
             this.PnlBuscarUnCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblListaVehiculos)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlFormularios
             // 
             this.PnlFormularios.BackColor = System.Drawing.Color.Silver;
+            this.PnlFormularios.Controls.Add(this.label3);
+            this.PnlFormularios.Controls.Add(this.TblListaVehiculos);
             this.PnlFormularios.Controls.Add(this.BtnRegistrar);
             this.PnlFormularios.Controls.Add(this.BtnEditar);
             this.PnlFormularios.Controls.Add(this.BtnEliminar);
-            this.PnlFormularios.Controls.Add(this.TblListaProducto);
+            this.PnlFormularios.Controls.Add(this.TblListaDomiciliarios);
             this.PnlFormularios.Controls.Add(this.PnlBuscarUnCliente);
             this.PnlFormularios.Controls.Add(this.BtnBuscar);
             this.PnlFormularios.Controls.Add(this.pictureBox2);
@@ -69,7 +74,7 @@
             this.PnlFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlFormularios.Location = new System.Drawing.Point(0, 0);
             this.PnlFormularios.Name = "PnlFormularios";
-            this.PnlFormularios.Size = new System.Drawing.Size(865, 492);
+            this.PnlFormularios.Size = new System.Drawing.Size(1276, 503);
             this.PnlFormularios.TabIndex = 2;
             // 
             // BtnRegistrar
@@ -81,7 +86,7 @@
             this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistrar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnRegistrar.Location = new System.Drawing.Point(25, 139);
+            this.BtnRegistrar.Location = new System.Drawing.Point(25, 144);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(96, 37);
             this.BtnRegistrar.TabIndex = 117;
@@ -99,7 +104,7 @@
             this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEditar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnEditar.Location = new System.Drawing.Point(25, 200);
+            this.BtnEditar.Location = new System.Drawing.Point(25, 205);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(96, 36);
             this.BtnEditar.TabIndex = 118;
@@ -116,7 +121,7 @@
             this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEliminar.ForeColor = System.Drawing.Color.DarkRed;
-            this.BtnEliminar.Location = new System.Drawing.Point(25, 261);
+            this.BtnEliminar.Location = new System.Drawing.Point(25, 266);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(96, 38);
             this.BtnEliminar.TabIndex = 119;
@@ -124,18 +129,18 @@
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
             // 
-            // TblListaProducto
+            // TblListaDomiciliarios
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.TblListaProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.TblListaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TblListaProducto.BackgroundColor = System.Drawing.Color.Snow;
-            this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblListaProducto.Location = new System.Drawing.Point(183, 74);
-            this.TblListaProducto.Name = "TblListaProducto";
-            this.TblListaProducto.Size = new System.Drawing.Size(638, 266);
-            this.TblListaProducto.TabIndex = 20;
-            this.TblListaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TblListaProducto_CellContentClick);
+            this.TblListaDomiciliarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.TblListaDomiciliarios.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TblListaDomiciliarios.BackgroundColor = System.Drawing.Color.Snow;
+            this.TblListaDomiciliarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TblListaDomiciliarios.Location = new System.Drawing.Point(183, 79);
+            this.TblListaDomiciliarios.Name = "TblListaDomiciliarios";
+            this.TblListaDomiciliarios.Size = new System.Drawing.Size(638, 266);
+            this.TblListaDomiciliarios.TabIndex = 20;
+            this.TblListaDomiciliarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TblListaProducto_CellContentClick);
             // 
             // PnlBuscarUnCliente
             // 
@@ -143,7 +148,7 @@
             this.PnlBuscarUnCliente.BackColor = System.Drawing.Color.Silver;
             this.PnlBuscarUnCliente.Controls.Add(this.textBox1);
             this.PnlBuscarUnCliente.Controls.Add(this.label2);
-            this.PnlBuscarUnCliente.Location = new System.Drawing.Point(407, 395);
+            this.PnlBuscarUnCliente.Location = new System.Drawing.Point(613, 406);
             this.PnlBuscarUnCliente.Name = "PnlBuscarUnCliente";
             this.PnlBuscarUnCliente.Size = new System.Drawing.Size(208, 71);
             this.PnlBuscarUnCliente.TabIndex = 110;
@@ -178,7 +183,7 @@
             this.BtnBuscar.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
             this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBuscar.Location = new System.Drawing.Point(277, 389);
+            this.BtnBuscar.Location = new System.Drawing.Point(483, 400);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(103, 42);
             this.BtnBuscar.TabIndex = 109;
@@ -192,7 +197,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox2.BackColor = System.Drawing.Color.Silver;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(386, 359);
+            this.pictureBox2.Location = new System.Drawing.Point(592, 370);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(248, 133);
             this.pictureBox2.TabIndex = 107;
@@ -207,7 +212,7 @@
             this.BtnVerDetalle.ForeColor = System.Drawing.Color.DarkRed;
             this.BtnVerDetalle.Image = ((System.Drawing.Image)(resources.GetObject("BtnVerDetalle.Image")));
             this.BtnVerDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnVerDetalle.Location = new System.Drawing.Point(640, 389);
+            this.BtnVerDetalle.Location = new System.Drawing.Point(846, 400);
             this.BtnVerDetalle.Name = "BtnVerDetalle";
             this.BtnVerDetalle.Size = new System.Drawing.Size(125, 42);
             this.BtnVerDetalle.TabIndex = 108;
@@ -220,7 +225,7 @@
             // 
             this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(325, 28);
+            this.pictureBox16.Location = new System.Drawing.Point(325, 33);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(33, 38);
             this.pictureBox16.TabIndex = 16;
@@ -230,7 +235,7 @@
             // 
             this.PbxCerrarFormulario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PbxCerrarFormulario.Image = ((System.Drawing.Image)(resources.GetObject("PbxCerrarFormulario.Image")));
-            this.PbxCerrarFormulario.Location = new System.Drawing.Point(25, 435);
+            this.PbxCerrarFormulario.Location = new System.Drawing.Point(25, 446);
             this.PbxCerrarFormulario.Name = "PbxCerrarFormulario";
             this.PbxCerrarFormulario.Size = new System.Drawing.Size(33, 31);
             this.PbxCerrarFormulario.TabIndex = 106;
@@ -244,30 +249,54 @@
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(364, 28);
+            this.label1.Location = new System.Drawing.Point(364, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(372, 29);
             this.label1.TabIndex = 19;
             this.label1.Text = "LISTA DE DOMICILIARIOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // TblListaVehiculos
+            // 
+            this.TblListaVehiculos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TblListaVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TblListaVehiculos.Location = new System.Drawing.Point(827, 79);
+            this.TblListaVehiculos.Name = "TblListaVehiculos";
+            this.TblListaVehiculos.Size = new System.Drawing.Size(364, 265);
+            this.TblListaVehiculos.TabIndex = 120;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(841, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(316, 29);
+            this.label3.TabIndex = 121;
+            this.label3.Text = "LISTA DE VEHICULOS";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // FrmDomiciliario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 492);
+            this.ClientSize = new System.Drawing.Size(1276, 503);
             this.Controls.Add(this.PnlFormularios);
             this.Name = "FrmDomiciliario";
             this.Text = "FrmDomiciliario";
             this.Load += new System.EventHandler(this.FrmDomiciliario_Load);
             this.PnlFormularios.ResumeLayout(false);
             this.PnlFormularios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblListaDomiciliarios)).EndInit();
             this.PnlBuscarUnCliente.ResumeLayout(false);
             this.PnlBuscarUnCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblListaVehiculos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,7 +304,7 @@
         #endregion
         private System.Windows.Forms.Panel PnlFormularios;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.DataGridView TblListaProducto;
+        private System.Windows.Forms.DataGridView TblListaDomiciliarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox PbxCerrarFormulario;
         private System.Windows.Forms.Panel PnlBuscarUnCliente;
@@ -287,5 +316,7 @@
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnEditar;
         private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView TblListaVehiculos;
     }
 }

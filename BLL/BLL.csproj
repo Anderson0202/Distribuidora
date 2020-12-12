@@ -43,9 +43,12 @@
   <ItemGroup>
     <Compile Include="AdministradorService.cs" />
     <Compile Include="ClienteService.cs" />
+    <Compile Include="DescuentoService.cs" />
+    <Compile Include="DomiciliarioService.cs" />
     <Compile Include="PedidoService.cs" />
     <Compile Include="ProductoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecretarioService.cs" />
     <Compile Include="VehiculoService.cs" />
   </ItemGroup>
   <ItemGroup>

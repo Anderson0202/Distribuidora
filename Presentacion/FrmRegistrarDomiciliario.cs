@@ -16,12 +16,13 @@ namespace Presentacion
     {
         private string ConnectionString;
         private VehiculoService vehiculoService;
+        private DomiciliarioService domiciliarioService;
         public FrmRegistrarDomiciliario()
         {
             InitializeComponent();
             ConnectionString = ConfigConnection.connectionString;
             vehiculoService = new VehiculoService(ConnectionString);
-
+            domiciliarioService = new DomiciliarioService(ConnectionString);
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -56,13 +57,29 @@ namespace Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
             Vehiculo vehiculo = new Vehiculo();
+
             vehiculo.Placa = TxtPlaca.Text;
             vehiculo.FechaVencimientoSoat = Convert.ToDateTime(TxtSoat.Text);
             vehiculo.FechaVenciciemtoTecnoMecanica = Convert.ToDateTime(TxtTecnoMecanica.Text);
-            String mensaje = vehiculoService.Guardar(vehiculo);
-            MessageBox.Show(mensaje);
+            
+            
+            Domiciliario domiciliario = new Domiciliario();
+
+            domiciliario.Identificacion = txIdentificacion.Text;
+            domiciliario.Nombre = txNombre.Text;
+            domiciliario.Apellido = txApellido.Text;
+            domiciliario.Telefono = txTelefono.Text;
+            domiciliario.Tipo = "domiciliario";
+            domiciliario.FechaVencimientoPermisoConduccion = Convert.ToDateTime(txFvpc.Text);
+            domiciliario.Moto = vehiculo;
+
+            String mensaje1 = domiciliarioService.Guardar(domiciliario);
+            String mensaje = vehiculoService.Guardar(vehiculo, domiciliario.Identificacion);
+
+
+            MessageBox.Show(mensaje, mensaje1);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -53,5 +53,18 @@ namespace BLL
 
         }
 
+        
+        public Producto BuscarxCodigo(string codigo)
+        {
+            connectionManager.Open();
+            Producto producto = ProductoRepository.BuscarPorCodigo(codigo);
+            connectionManager.Close();
+            if (producto == null)
+            {
+                return null;
+            }
+            return producto;
+        }
+
     }
 }

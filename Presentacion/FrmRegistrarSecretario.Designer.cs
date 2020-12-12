@@ -31,17 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarSecretario));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txApellido = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txTelefono = new System.Windows.Forms.TextBox();
+            this.txNombre = new System.Windows.Forms.TextBox();
+            this.txIdentificacion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txFechaContrato = new System.Windows.Forms.TextBox();
             this.PnlFormularioRegistroSecretario = new System.Windows.Forms.Panel();
             this.PbxCerrarRegistro = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -70,12 +70,12 @@
             this.label7.TabIndex = 50;
             this.label7.Text = "Apellido";
             // 
-            // textBox4
+            // txApellido
             // 
-            this.textBox4.Location = new System.Drawing.Point(341, 187);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(210, 20);
-            this.textBox4.TabIndex = 49;
+            this.txApellido.Location = new System.Drawing.Point(341, 187);
+            this.txApellido.Name = "txApellido";
+            this.txApellido.Size = new System.Drawing.Size(210, 20);
+            this.txApellido.TabIndex = 49;
             // 
             // button1
             // 
@@ -128,26 +128,26 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Identificacion";
             // 
-            // textBox3
+            // txTelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(341, 225);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(210, 20);
-            this.textBox3.TabIndex = 44;
+            this.txTelefono.Location = new System.Drawing.Point(341, 225);
+            this.txTelefono.Name = "txTelefono";
+            this.txTelefono.Size = new System.Drawing.Size(210, 20);
+            this.txTelefono.TabIndex = 44;
             // 
-            // textBox2
+            // txNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(341, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 20);
-            this.textBox2.TabIndex = 43;
+            this.txNombre.Location = new System.Drawing.Point(341, 149);
+            this.txNombre.Name = "txNombre";
+            this.txNombre.Size = new System.Drawing.Size(210, 20);
+            this.txNombre.TabIndex = 43;
             // 
-            // textBox1
+            // txIdentificacion
             // 
-            this.textBox1.Location = new System.Drawing.Point(341, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 20);
-            this.textBox1.TabIndex = 42;
+            this.txIdentificacion.Location = new System.Drawing.Point(341, 111);
+            this.txIdentificacion.Name = "txIdentificacion";
+            this.txIdentificacion.Size = new System.Drawing.Size(210, 20);
+            this.txIdentificacion.TabIndex = 42;
             // 
             // label1
             // 
@@ -174,12 +174,12 @@
             this.label5.Text = "Fecha de Contrato";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox5
+            // txFechaContrato
             // 
-            this.textBox5.Location = new System.Drawing.Point(341, 263);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(210, 20);
-            this.textBox5.TabIndex = 53;
+            this.txFechaContrato.Location = new System.Drawing.Point(341, 263);
+            this.txFechaContrato.Name = "txFechaContrato";
+            this.txFechaContrato.Size = new System.Drawing.Size(210, 20);
+            this.txFechaContrato.TabIndex = 53;
             // 
             // PnlFormularioRegistroSecretario
             // 
@@ -188,12 +188,12 @@
             this.PnlFormularioRegistroSecretario.Controls.Add(this.pictureBox2);
             this.PnlFormularioRegistroSecretario.Controls.Add(this.label5);
             this.PnlFormularioRegistroSecretario.Controls.Add(this.label1);
-            this.PnlFormularioRegistroSecretario.Controls.Add(this.textBox5);
-            this.PnlFormularioRegistroSecretario.Controls.Add(this.textBox1);
-            this.PnlFormularioRegistroSecretario.Controls.Add(this.textBox2);
+            this.PnlFormularioRegistroSecretario.Controls.Add(this.txFechaContrato);
+            this.PnlFormularioRegistroSecretario.Controls.Add(this.txIdentificacion);
+            this.PnlFormularioRegistroSecretario.Controls.Add(this.txNombre);
             this.PnlFormularioRegistroSecretario.Controls.Add(this.label7);
-            this.PnlFormularioRegistroSecretario.Controls.Add(this.textBox3);
-            this.PnlFormularioRegistroSecretario.Controls.Add(this.textBox4);
+            this.PnlFormularioRegistroSecretario.Controls.Add(this.txTelefono);
+            this.PnlFormularioRegistroSecretario.Controls.Add(this.txApellido);
             this.PnlFormularioRegistroSecretario.Controls.Add(this.label2);
             this.PnlFormularioRegistroSecretario.Controls.Add(this.button1);
             this.PnlFormularioRegistroSecretario.Controls.Add(this.label3);
@@ -234,17 +234,17 @@
 
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txApellido;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txTelefono;
+        private System.Windows.Forms.TextBox txNombre;
+        private System.Windows.Forms.TextBox txIdentificacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txFechaContrato;
         private System.Windows.Forms.Panel PnlFormularioRegistroSecretario;
         private System.Windows.Forms.PictureBox PbxCerrarRegistro;
     }

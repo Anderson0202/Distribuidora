@@ -36,7 +36,7 @@
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.TblListaProducto = new System.Windows.Forms.DataGridView();
+            this.TblListaSecretarios = new System.Windows.Forms.DataGridView();
             this.PnlBuscarUnCliente = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PbxCerrarFormulario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.PnlFormulario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblListaSecretarios)).BeginInit();
             this.PnlBuscarUnCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +79,7 @@
             this.PnlFormulario.Controls.Add(this.BtnRegistrar);
             this.PnlFormulario.Controls.Add(this.button2);
             this.PnlFormulario.Controls.Add(this.button3);
-            this.PnlFormulario.Controls.Add(this.TblListaProducto);
+            this.PnlFormulario.Controls.Add(this.TblListaSecretarios);
             this.PnlFormulario.Controls.Add(this.PnlBuscarUnCliente);
             this.PnlFormulario.Controls.Add(this.BtnBuscar);
             this.PnlFormulario.Controls.Add(this.pictureBox2);
@@ -146,17 +146,17 @@
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // TblListaProducto
+            // TblListaSecretarios
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.TblListaProducto.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.TblListaProducto.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TblListaProducto.BackgroundColor = System.Drawing.Color.Snow;
-            this.TblListaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TblListaProducto.Location = new System.Drawing.Point(172, 68);
-            this.TblListaProducto.Name = "TblListaProducto";
-            this.TblListaProducto.Size = new System.Drawing.Size(571, 266);
-            this.TblListaProducto.TabIndex = 108;
+            this.TblListaSecretarios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.TblListaSecretarios.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TblListaSecretarios.BackgroundColor = System.Drawing.Color.Snow;
+            this.TblListaSecretarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TblListaSecretarios.Location = new System.Drawing.Point(172, 68);
+            this.TblListaSecretarios.Name = "TblListaSecretarios";
+            this.TblListaSecretarios.Size = new System.Drawing.Size(571, 266);
+            this.TblListaSecretarios.TabIndex = 108;
             // 
             // PnlBuscarUnCliente
             // 
@@ -258,7 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.PnlFormulario.ResumeLayout(false);
             this.PnlFormulario.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TblListaProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TblListaSecretarios)).EndInit();
             this.PnlBuscarUnCliente.ResumeLayout(false);
             this.PnlBuscarUnCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -269,7 +269,7 @@
         #endregion
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Panel PnlFormulario;
-        private System.Windows.Forms.DataGridView TblListaProducto;
+        private System.Windows.Forms.DataGridView TblListaSecretarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox PbxCerrarFormulario;
         private System.Windows.Forms.Panel PnlBuscarUnCliente;
